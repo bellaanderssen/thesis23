@@ -1,56 +1,130 @@
 import pandas as pd
+from contextlib import redirect_stdout
+
+SPECIFIC_OUTPUT_DIR = "/home/bellaando/thesis23/clean_data/"
+DATA_SOURCE = "/home/bellaando/thesis23/TestED.csv"
 
 TARGET_VAR = 'repres7days'
-SELECTED_COLUMNS = ['age_recode', 'referred_to_on_departure_recode',
-                    'PREFERRED_LANGUAGE_ASCL', 'ED_DIAGNOSIS_CODE',
-                    'SEX', 'ED_DIAGNOSIS_CODE_SCT', 'MODE_OF_ARRIVAL',
-                    'MODE_OF_SEPARATION', 'TRIAGE_CATEGORY', 'ED_STATUS',
-                    'DIAGNOSIS_CODE_P', 'EPISODE_LENGTH_OF_STAY', 'HOURS_IN_ICU',
-                    'MARITAL_STATUS', 'MDC', 'UNIT_TYPE_ON_ADMISSION',
-                    'DEATH_DATE', 'final_diagnosis_subcode', 'level', 'EDLOS', 'remoteness',
-                    'PRESENTING_PROBLEM', TARGET_VAR,
-                    ]
+SELECTED_COLUMNS = ['age_recode',
+                    'SEX', 
+                    'ED_SOURCE_OF_REFERRAL', # where to put in employer?
+                    'referred_to_on_departure_recode',
+                    'PREFERRED_LANGUAGE_ASCL', 
+                    'ED_DIAGNOSIS_CODE', # COMBINE THESE TWO??
+                    'ED_DIAGNOSIS_CODE_SCT', 
+                    'MODE_OF_ARRIVAL',
+                    'MODE_OF_SEPARATION', 
+                    'TRIAGE_CATEGORY', # leave as is
+                    'HOURS_IN_ICU',
+                    'final_diagnosis_subcode', # ask - i think this one will be more useful than ED_DIAGNOSIS CODE
+                    'level', # ??
+                    'EDLOS',
+                    'remoteness', # leave as is
+                    'PRESENTING_PROBLEM', # keep for now, who knows
+                    TARGET_VAR,
+]
+
+NEW_COLUMNS = ['age',
+                'sex',
+                'source_referral',
+                'departure_referral',
+                'preferred_language',
+                'ed_diagnosis_1',
+                'ed_diagnosis_2',
+                'arrival_mode',
+                'separation_mode',
+                'triage_category',
+                'icu_status',
+                'final_diagnosis_subcode',
+                'level',
+                'EDLOS',
+                'remoteness',
+                'presenting_problem',
+                TARGET_VAR,
+
+]
 
 def count_rows_containing_nan(df):
     return df.isnull().any(axis=1).sum()
 
-
-def sex_to_nominal(sex: int) -> int:
-    if sex not in [1, 2, 3, 9]:
-        raise ValueError("Unexpected sex value")
-    if sex > 3:
-        return 3
-    return sex
-
 def age_to_nominal(age: float) -> int:
-    if age < 20:
+    if age < 6:
         return 0
-    elif age < 40:
+    elif age < 16:
         return 1
-    elif age < 60:
+    elif age < 26:
         return 2
-    elif age < 80:
+    elif age < 46:
         return 3
-    return 4
-
-def source_of_referral_to_nominal(source: int) -> int:
-    if source < 0:
-        raise ValueError("Source of referral cannot be negative")
-    if source in [1]:
-        return 1
-    elif source in [2, 3, 6, 7, 8]:
-        return 2
-    elif source in [4]:
-        return 3
-    elif source in [5]:
+    elif age < 66:
         return 4
-    elif source in [9, 10, 11, 16]:
+    elif age < 86:
         return 5
     return 6
 
-def indigenous_to_nominal(indigenous: int) -> int:
-    INDIGENOUS_OR_TSI = 4
-    return 1 if indigenous == INDIGENOUS_OR_TSI else 0
+def sex_to_nominal(sex: int) -> int:
+    if sex not in [1, 2, 3, 9]: # M, F, I, UNKNOWN respectively
+        raise ValueError("Unexpected sex value")
+    if sex > 3: # catchall "other"
+        return 3
+    return sex
+
+def source_of_referral_to_nominal(source: int) -> int:
+    if source == 1: # self, family, friends
+        return 0
+    elif source <= 4: # clinic
+        return 1
+    elif source <= 9: # hospital
+        return 2
+    elif source <= 16: # community org
+        return 3
+    return 4 # other
+
+def referred_to_on_departure_to_nominal(source: int) -> int:
+    if source < 3: # review in ED
+        return 0
+    elif source == 8: # not referred
+        return 1
+    elif source == 9: # unknown
+        return 2
+    return 3 # referred to specialist or social work
+
+def preferred_language_ascl_to_nominal(language: int) -> int:
+    if language < 1000: # unknown or nonverbal
+        return 0
+    elif language == 1201: # english
+        return 1
+    return 2 # catchall other
+
+def mode_of_arrival_to_nominal(mode: int) -> int:
+    if mode in [1, 4, 5, 6]: # ambulance of some sort
+        return 0
+    elif mode == 3: # private vehicle
+        return 1
+    return 2
+
+def mode_of_separation_to_nominal(mode: int) -> int:
+    if mode in [1, 2]: # admitted to normal ward
+        return 0
+    elif mode == 4: # treatment completed
+        return 1
+    elif mode == 10: # admitted to ICU
+        return 2
+    elif mode in [3, 8, 99]: # died or error
+        return 3
+    return 4
+
+def hours_in_icu_to_nominal(hours: int) -> int:
+    if hours > 0: # attended ICU
+        return 1
+    return 0
+
+def ed_los_to_nominal(hours: int) -> int:
+    if hours < 24: # not sure if this is right
+        return 0
+    elif hours < 48:
+        return 1
+    return 2
 
 def output_analytics(df):
     # Count number of instances containing missing values
@@ -68,51 +142,39 @@ def output_analytics(df):
             df[col], df[TARGET_VAR], dropna=False, margins=True)
         print(tab, '\n')
 
-df = pd.read_csv(
-    'TestED.csv',
-    dtype=object,
-    encoding='unicode_escape')
+df = pd.read_csv(DATA_SOURCE, encoding='unicode_escape')
 df = df[SELECTED_COLUMNS]
 print(f"Selected columns: {', '.join(SELECTED_COLUMNS)}")
 
 # Ensure there are no NULL values in the data
-df = df.dropna()
-assert not df.isnull().values.any()
+df = df.dropna(how = 'all')
+assert not df.isnull().values.all()
 
-# Coerce all columns to numeric
-df = df.apply(pd.to_numeric)
+# Coerce most columns to numeric
+numeric_cols = df.columns[df.dtypes.ne('object')]
+df[numeric_cols] = df[numeric_cols].apply(pd.to_numeric)
+
+# rename columns
+df.columns = NEW_COLUMNS
+print(df.head())
 
 # Transform variables into buckets
-df['age_recode'] = df['age_recode'].apply(age_to_nominal)
+df['age'] = df['age'].apply(age_to_nominal)
 df['sex'] = df['sex'].apply(sex_to_nominal)
-df['preferred_language_ascl'] = df['preferred_language_ascl'].apply(
-    language_ascl_to_nominal)
-df['ed_source_of_referral'] = df['ed_source_of_referral'].apply(
-    source_of_referral_to_nominal)
-df['indigenous'] = df['indigenous'].apply(indigenous_to_nominal)
-df.rename(columns={
-    'age_recode': 'age',
-    'preferred_language_ascl': 'prefers_english',
-    'dx_subcode_final': 'diagnosis',
-}, inplace=True)
+df['source_referral'] = df['source_referral'].apply(source_of_referral_to_nominal)
+df['departure_referral'] = df['departure_referral'].apply(referred_to_on_departure_to_nominal)
+df['preferred_language'] = df['preferred_language'].apply(preferred_language_ascl_to_nominal)
+df['arrival_mode'] = df['arrival_mode'].apply(mode_of_arrival_to_nominal)
+df['separation_mode'] = df['separation_mode'].apply(mode_of_separation_to_nominal)
+df['icu_status'] = df['icu_status'].apply(hours_in_icu_to_nominal)
+df['EDLOS'] = df['EDLOS'].apply(ed_los_to_nominal)
 
-START_FEATURES = [
-    'triage_category', 'ambulance', 'age', 'flgadmit30', 'business_hours',
-    'diagnosis', 'admitted']
+print(df.head())
 
-df.to_csv(SPECIFIC_OUTPUT_DIR + 'no-feature-selection.csv', index=False)
-df[START_FEATURES].to_csv(SPECIFIC_OUTPUT_DIR +
-                          'start-features.csv', index=False)
+# export new clean data to csv
+df.to_csv(SPECIFIC_OUTPUT_DIR + 'no-feature-selection_1.csv', index=False)
 
+# cross tabulate all new variables
 with open(SPECIFIC_OUTPUT_DIR + 'summary.txt', 'w') as f:
-    with redirect_stdout(f):
-        output_analytics(df)
-
-# Derive broad diagnosis codes
-df['diagnosis'] = df['diagnosis'].apply(int)
-df.to_csv(BROAD_OUTPUT_DIR + 'no-feature-selection.csv', index=False)
-df[START_FEATURES].to_csv(BROAD_OUTPUT_DIR + 'start-features.csv', index=False)
-
-with open(BROAD_OUTPUT_DIR + 'summary.txt', 'w') as f:
     with redirect_stdout(f):
         output_analytics(df)
