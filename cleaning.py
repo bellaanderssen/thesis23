@@ -144,7 +144,7 @@ def output_analytics(df):
 
 df = pd.read_csv(DATA_SOURCE, encoding='unicode_escape')
 df = df[SELECTED_COLUMNS]
-print(f"Selected columns: {', '.join(SELECTED_COLUMNS)}")
+# print(f"Selected columns: {', '.join(SELECTED_COLUMNS)}")
 
 # Ensure there are no NULL values in the data
 df = df.dropna(how = 'all')
@@ -156,7 +156,7 @@ df[numeric_cols] = df[numeric_cols].apply(pd.to_numeric)
 
 # rename columns
 df.columns = NEW_COLUMNS
-print(df.head())
+# print(df.head())
 
 # Transform variables into buckets
 df['age'] = df['age'].apply(age_to_nominal)
@@ -171,10 +171,10 @@ df['EDLOS'] = df['EDLOS'].apply(ed_los_to_nominal)
 # df['presenting_problem'] = df['presenting_problem'].replace({"'":'', '"':''}, regex=True)
 
 
-print(df.head())
+# print(df.head())
 
 # export new clean data to csv
-df.to_csv(SPECIFIC_OUTPUT_DIR + 'no-feature-selection_1.csv', index=False)
+df.to_csv(SPECIFIC_OUTPUT_DIR + 'no-feature_selection_1.csv', index=False)
 
 # cross tabulate all new variables
 with open(SPECIFIC_OUTPUT_DIR + 'summary.txt', 'w') as f:
