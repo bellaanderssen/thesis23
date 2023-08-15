@@ -1,0 +1,24 @@
+Searcher: 	Attribute ranking.
+Seacher options: -N 5
+Evaluator: 	Information Gain Ranking Filter
+Evaluator options: 
+
+Runtime (HH:mm:ss): 0:00:00.067127
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 16 repres7days):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.04254   7 ed_diagnosis_2
+ 0.01229  12 final_diagnosis_subcode
+ 0.01114  10 triage_category
+ 0.00911   3 source_referral
+ 0.00469   6 ed_diagnosis_1
+
+Selected attributes: 7,12,10,3,6 : 5

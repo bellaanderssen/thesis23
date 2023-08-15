@@ -20,7 +20,7 @@ SELECTED_COLUMNS = ['age_recode',
                     'level', # ??
                     'EDLOS',
                     'remoteness', # leave as is
-                    'PRESENTING_PROBLEM', # keep for now, who knows
+                    # 'PRESENTING_PROBLEM', # keep for now, who knows
                     TARGET_VAR,
 ]
 
@@ -39,7 +39,7 @@ NEW_COLUMNS = ['age',
                 'level',
                 'EDLOS',
                 'remoteness',
-                'presenting_problem',
+                # 'presenting_problem',
                 TARGET_VAR,
 
 ]
@@ -168,6 +168,8 @@ df['arrival_mode'] = df['arrival_mode'].apply(mode_of_arrival_to_nominal)
 df['separation_mode'] = df['separation_mode'].apply(mode_of_separation_to_nominal)
 df['icu_status'] = df['icu_status'].apply(hours_in_icu_to_nominal)
 df['EDLOS'] = df['EDLOS'].apply(ed_los_to_nominal)
+# df['presenting_problem'] = df['presenting_problem'].replace({"'":'', '"':''}, regex=True)
+
 
 print(df.head())
 

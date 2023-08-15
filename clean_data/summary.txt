@@ -150,19 +150,3 @@ remoteness
 missing       1064    98   1162
 All          44630  5370  50000 
 
-repres7days                                             0     1    All
-presenting_problem                                                    
-# RADIUS/ULNA                                           1     0      1
-# RIGHT PATELLA                                         1     0      1
-# distal phalanx R thumb                                1     0      1
-'  pins and needles '  to head 2/12  and  headache      1     0      1
-'KIDNEY PAIN' FOR THE PAST 6-8 HOURS                    1     0      1
-...                                                   ...   ...    ...
-{Patient Expect: REDFERN COMMUNITY NURSE - WOUND        1     0      1
-{Patient Expect: SEVERE BACK PAIN - T2DM / PERIPHE      1     0      1
-{Patient Expect: TFER FROM HORNSBY HOSPITAL - ADMI      0     1      1
-{Patient Expect: VASCULOPATH. CHRONIC R LOWER LIMB      1     0      1
-All                                                 44630  5370  50000
-
-[2735 rows x 3 columns] 
-
