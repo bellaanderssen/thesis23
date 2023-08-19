@@ -10,15 +10,18 @@ df = pd.read_csv(DATA_SOURCE, encoding='unicode_escape')
 print('data read in!')
 for col in df.columns:
 
-    print({col}, 'is being worked on.')
+    # print({col}, 'is being worked on.')
     if col == 'repres7days' or ((col.startswith('PROCEDURE') or col.startswith('DIAGNOSIS')) and (col.endswith('P') == False)):
+        continue
+
+    if col != 'PREFERRED_LANGUAGE_ASCL':
         continue
 
     # Cross-tabulate each attribute against class attribute
     tab = pd.crosstab(df[col], df['repres7days'], dropna=False)
-    
-    if len(tab.index) > 100:
-        continue
+
+    # if len(tab.index) > 100:
+    #     continue
 
     try:
         ax = tab.plot(kind='bar', stacked=True)
