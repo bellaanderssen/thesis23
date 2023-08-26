@@ -1,0 +1,43 @@
+Classifier: weka.classifiers.lazy.IBk
+Options: -K 3 -A weka.core.neighboursearch.KDTree
+Classifier build time (HH:mm:ss): 0:00:00.188208
+Evaluation time (HH:mm:ss): 0:00:09.787009
+
+IB1 instance-based classifier
+using 3 nearest neighbour(s) for classification
+
+
+
+Correctly Classified Instances       36597               88.9875 %
+Incorrectly Classified Instances      4529               11.0125 %
+Kappa statistic                          0.0739
+Mean absolute error                      0.177 
+Root mean squared error                  0.3159
+Relative absolute error                 91.8855 %
+Root relative squared error            101.7897 %
+Total Number of Instances            41126     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.991    0.945    0.897      0.991    0.941      0.121    0.614     0.921     0
+                 0.055    0.009    0.422      0.055    0.097      0.121    0.614     0.195     1
+Weighted Avg.    0.890    0.844    0.845      0.890    0.850      0.121    0.614     0.842     
+
+[[36354.   333.]
+ [ 4196.   243.]]
+
+Class 0 details
+Area under ROC: 0.6140102570534013
+False negatives: 333.0
+True negatives: 243.0
+False positives: 4196.0
+True positives: 36354.0
+
+Class 1 details
+Area under ROC: 0.6140194432185478
+False negatives: 4196.0
+True negatives: 36354.0
+False positives: 333.0
+True positives: 243.0
+

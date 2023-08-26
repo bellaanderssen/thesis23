@@ -1,0 +1,84 @@
+Classifier: weka.classifiers.trees.HoeffdingTree
+Options: default
+Classifier build time (HH:mm:ss): 0:00:00.098323
+Evaluation time (HH:mm:ss): 0:00:00.452663
+
+
+triage_category = 1: 0 (191.000) NB1 NB adaptive1
+triage_category = 2: 
+|   source_referral = 0: 
+|   |   triage_category = 1: 0 (2919.000) NB2 NB adaptive2
+|   |   triage_category = 2: 0 (846.000)
+|   source_referral = 1: 0 (282.000) NB4 NB adaptive4
+|   source_referral = 2: 0 (54.000) NB5 NB adaptive5
+|   source_referral = 3: 0 (66.000) NB6 NB adaptive6
+|   source_referral = 4: 0 (52.000) NB7 NB adaptive7
+triage_category = 3: 
+|   source_referral = 0: 
+|   |   triage_category = 1: 0 (2915.000) NB8 NB adaptive8
+|   |   triage_category = 3: 
+|   |   |   triage_category = 1: 0 (3086.000) NB9 NB adaptive9
+|   |   |   triage_category = 3: 
+|   |   |   |   triage_category = 1: 0 (3104.000) NB10 NB adaptive10
+|   |   |   |   triage_category = 3: 0 (770.000)
+|   source_referral = 1: 0 (936.000) NB12 NB adaptive12
+|   source_referral = 2: 0 (105.000) NB13 NB adaptive13
+|   source_referral = 3: 0 (132.000) NB14 NB adaptive14
+|   source_referral = 4: 0 (162.000) NB15 NB adaptive15
+triage_category = 4: 
+|   source_referral = 0: 
+|   |   triage_category = 1: 0 (2921.000) NB16 NB adaptive16
+|   |   triage_category = 4: 
+|   |   |   triage_category = 1: 0 (3109.000) NB17 NB adaptive17
+|   |   |   triage_category = 4: 
+|   |   |   |   triage_category = 1: 0 (3098.000) NB18 NB adaptive18
+|   |   |   |   triage_category = 4: 
+|   |   |   |   |   triage_category = 1: 0 (3102.000) NB19 NB adaptive19
+|   |   |   |   |   triage_category = 4: 0 (592.000)
+|   source_referral = 1: 0 (870.000) NB21 NB adaptive21
+|   source_referral = 2: 0 (56.000) NB22 NB adaptive22
+|   source_referral = 3: 0 (155.000) NB23 NB adaptive23
+|   source_referral = 4: 0 (211.000) NB24 NB adaptive24
+triage_category = 5: 
+|   source_referral = 0: 
+|   |   triage_category = 1: 0 (2641.000) NB25 NB adaptive25
+|   |   triage_category = 5: 0 (315.000)
+|   source_referral = 1: 0 (222.000) NB27 NB adaptive27
+|   source_referral = 2: 0 (6.000) NB28 NB adaptive28
+|   source_referral = 3: 1 (174.000) NB29 NB adaptive29
+|   source_referral = 4: 0 (69.000) NB30 NB adaptive30
+
+
+Correctly Classified Instances       36775               89.4203 %
+Incorrectly Classified Instances      4351               10.5797 %
+Kappa statistic                          0.0663
+Mean absolute error                      0.185 
+Root mean squared error                  0.3047
+Relative absolute error                 96.0621 %
+Root relative squared error             98.1995 %
+Total Number of Instances            41126     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.997    0.958    0.896      0.997    0.944      0.147    0.580     0.909     0
+                 0.042    0.003    0.656      0.042    0.078      0.147    0.580     0.188     1
+Weighted Avg.    0.894    0.855    0.870      0.894    0.850      0.147    0.580     0.831     
+
+[[36590.    97.]
+ [ 4254.   185.]]
+
+Class 0 details
+Area under ROC: 0.5796998565453818
+False negatives: 97.0
+True negatives: 185.0
+False positives: 4254.0
+True positives: 36590.0
+
+Class 1 details
+Area under ROC: 0.5796998565453818
+False negatives: 4254.0
+True negatives: 36590.0
+False positives: 97.0
+True positives: 185.0
+

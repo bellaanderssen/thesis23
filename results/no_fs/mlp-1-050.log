@@ -1,0 +1,136 @@
+Classifier: weka.classifiers.functions.MultilayerPerceptron
+Options: -H 1 -N 50
+Classifier build time (HH:mm:ss): 0:00:02.816566
+Evaluation time (HH:mm:ss): 0:00:24.124227
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    0.20960800782818662
+    Node 2    2.037666671649139
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -0.20960800782818706
+    Node 2    -2.0376666716491383
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    0.6776240571302836
+    Attrib age=0    -2.0247015843610123
+    Attrib age=1    -0.6474494377442646
+    Attrib age=2    3.2281949788010147
+    Attrib age=3    0.3821265637633403
+    Attrib age=4    -1.3833387941838557
+    Attrib age=5    -0.4160792973429275
+    Attrib age=6    -2.6247323561658717
+    Attrib sex=1    -0.4932106983291831
+    Attrib sex=2    0.5302279746559123
+    Attrib sex=3    -0.6948865067249046
+    Attrib source_referral=0    7.2166644139082505
+    Attrib source_referral=1    4.47347462805371
+    Attrib source_referral=2    1.148795959877782
+    Attrib source_referral=3    -14.39852660277557
+    Attrib source_referral=4    -0.4923300812894212
+    Attrib departure_referral=0    -3.6803337031986763
+    Attrib departure_referral=1    3.236826912241034
+    Attrib departure_referral=2    -0.710626028993319
+    Attrib departure_referral=3    -0.2520550530497675
+    Attrib preferred_language=0    -1.433022347920644
+    Attrib preferred_language=1    0.19632517384129902
+    Attrib preferred_language=2    -2.6266259745646603
+    Attrib preferred_language=3    -3.363766743669521
+    Attrib preferred_language=4    4.270129936340461
+    Attrib preferred_language=5    0.24153922904366185
+    Attrib arrival_mode=0    6.050874006454179
+    Attrib arrival_mode=1    -6.880886372621506
+    Attrib arrival_mode=2    0.1751475227831432
+    Attrib separation_mode=0    0.641292680011834
+    Attrib separation_mode=1    -0.6700102433665944
+    Attrib separation_mode=2    3.3971639873929793
+    Attrib separation_mode=3    -4.749147789877423
+    Attrib triage_category=1    0.09056095125760684
+    Attrib triage_category=2    2.869470341930071
+    Attrib triage_category=3    4.538347216674423
+    Attrib triage_category=4    -1.1510747605865856
+    Attrib triage_category=5    -8.414462589117097
+    Attrib icu_status=1    -0.1456487482841153
+    Attrib diagnosis_code=1    -1.2443310027039105
+    Attrib diagnosis_code=2    -1.5196031687220304
+    Attrib diagnosis_code=3    4.329572068367773
+    Attrib diagnosis_code=4    1.347665978923768
+    Attrib diagnosis_code=5    0.19195993350878968
+    Attrib diagnosis_code=6    4.714294429190341
+    Attrib diagnosis_code=9    0.7820841671448349
+    Attrib diagnosis_code=10    -4.913419743823155
+    Attrib diagnosis_code=11    -0.9970790797038891
+    Attrib diagnosis_code=12    -5.196473210948619
+    Attrib diagnosis_code=13    3.2492049738750874
+    Attrib diagnosis_code=14    -9.769497385545131
+    Attrib diagnosis_code=15    -1.83825805808349
+    Attrib diagnosis_code=18    -2.4656933712059974
+    Attrib diagnosis_code=19    -2.1935876567198838
+    Attrib diagnosis_code=20    1.168256865391908
+    Attrib diagnosis_code=21    -2.7473581192470813
+    Attrib diagnosis_code=22    -0.7184180183715676
+    Attrib diagnosis_code=24    -0.0842348369713519
+    Attrib diagnosis_code=25    2.6546895429816133
+    Attrib diagnosis_code=26    -0.6997045376014683
+    Attrib diagnosis_code=33    1.1670314391257228
+    Attrib diagnosis_code=99    0.19603821747716893
+    Attrib level=0    -1.6046627329715568
+    Attrib level=1    -3.6564294873498246
+    Attrib level=2    -1.0896062970548712
+    Attrib level=3    -2.6576097347830943
+    Attrib level=4    1.6157196630035875
+    Attrib level=5    3.662188065778815
+    Attrib level=6    0.24631821205310797
+    Attrib EDLOS=0    -7.76148159554192
+    Attrib EDLOS=1    3.5270794797830414
+    Attrib EDLOS=2    1.2472339953629545
+    Attrib EDLOS=3    1.5607572540581462
+    Attrib remoteness=1    0.916767514582847
+    Attrib remoteness=2    -2.7568766713613795
+    Attrib remoteness=3    -0.12465794231223028
+    Attrib remoteness=4    -1.1200043388598038
+    Attrib remoteness=5    1.0638332886171333
+    Attrib death_status    0.043656788265642885
+Class 0
+    Input
+    Node 0
+Class 1
+    Input
+    Node 1
+
+
+
+Correctly Classified Instances       36613               89.0264 %
+Incorrectly Classified Instances      4513               10.9736 %
+Kappa statistic                          0.0409
+Mean absolute error                      0.1793
+Root mean squared error                  0.3061
+Relative absolute error                 93.0767 %
+Root relative squared error             98.6325 %
+Total Number of Instances            41126     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.994    0.970    0.894      0.994    0.942      0.083    0.561     0.906     0
+                 0.030    0.006    0.391      0.030    0.056      0.083    0.561     0.176     1
+Weighted Avg.    0.890    0.866    0.840      0.890    0.846      0.083    0.561     0.827     
+
+[[36480.   207.]
+ [ 4306.   133.]]
+
+Class 0 details
+Area under ROC: 0.5610179659959974
+False negatives: 207.0
+True negatives: 133.0
+False positives: 4306.0
+True positives: 36480.0
+
+Class 1 details
+Area under ROC: 0.5609958940236585
+False negatives: 4306.0
+True negatives: 36480.0
+False positives: 207.0
+True positives: 133.0
+
