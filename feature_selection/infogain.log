@@ -3,7 +3,7 @@ Seacher options: -N 5
 Evaluator: 	Information Gain Ranking Filter
 Evaluator options: 
 
-Runtime (HH:mm:ss): 0:00:00.067127
+Runtime (HH:mm:ss): 0:00:00.039204
 
 
 === Attribute Selection on all input data ===
@@ -11,14 +11,14 @@ Runtime (HH:mm:ss): 0:00:00.067127
 Search Method:
 	Attribute ranking.
 
-Attribute Evaluator (supervised, Class (nominal): 16 repres7days):
+Attribute Evaluator (supervised, Class (nominal): 15 repres7days):
 	Information Gain Ranking Filter
 
 Ranked attributes:
- 0.04254   7 ed_diagnosis_2
- 0.01229  12 final_diagnosis_subcode
- 0.01114  10 triage_category
- 0.00911   3 source_referral
- 0.00469   6 ed_diagnosis_1
+ 0.00991   8 triage_category
+ 0.00971   3 source_referral
+ 0.00752  10 diagnosis_code
+ 0.00299  13 remoteness
+ 0.00178  12 EDLOS
 
-Selected attributes: 7,12,10,3,6 : 5
+Selected attributes: 8,3,10,13,12 : 5
