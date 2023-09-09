@@ -1,0 +1,135 @@
+Classifier: weka.classifiers.functions.Logistic
+Options: default
+Classifier build time (HH:mm:ss): 0:00:07.313785
+Evaluation time (HH:mm:ss): 0:00:38.874317
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                           Class
+Variable                       0
+================================
+age=46-65                   0.04
+age=0-5                   0.0856
+age=16-25                -0.1313
+age=66-85                 0.0189
+age=26-45                -0.1076
+age=6-15                  0.1505
+age=86+                   0.1606
+icu_status=True          -0.5033
+triage_category=1         0.8348
+triage_category=2         0.2323
+triage_category=3         0.1882
+triage_category=4         0.0647
+triage_category=5        -0.8372
+diagnosis_code=1         -0.2361
+diagnosis_code=2         -0.0105
+diagnosis_code=3         -0.0356
+diagnosis_code=4         -0.0675
+diagnosis_code=5          0.3882
+diagnosis_code=6            0.04
+diagnosis_code=9          0.2898
+diagnosis_code=10        -0.0627
+diagnosis_code=11        -0.7342
+diagnosis_code=12        -0.3208
+diagnosis_code=13         0.1967
+diagnosis_code=14         -0.507
+diagnosis_code=15         -0.193
+diagnosis_code=18        -0.3222
+diagnosis_code=19        -0.1511
+diagnosis_code=20        -0.3155
+diagnosis_code=21        -0.0774
+diagnosis_code=22        -1.2635
+diagnosis_code=24        -0.5168
+diagnosis_code=25         0.4149
+diagnosis_code=26        12.4869
+diagnosis_code=33         -0.185
+diagnosis_code=99         0.1053
+remoteness=1              0.1683
+remoteness=2              -0.151
+remoteness=3             -0.1463
+remoteness=4             -0.2829
+remoteness=5              1.1674
+Intercept                 2.1148
+
+
+Odds Ratios...
+                           Class
+Variable                       0
+================================
+age=46-65                 1.0409
+age=0-5                   1.0894
+age=16-25                  0.877
+age=66-85                 1.0191
+age=26-45                  0.898
+age=6-15                  1.1624
+age=86+                   1.1742
+icu_status=True           0.6045
+triage_category=1         2.3043
+triage_category=2         1.2615
+triage_category=3         1.2071
+triage_category=4         1.0668
+triage_category=5         0.4329
+diagnosis_code=1          0.7897
+diagnosis_code=2          0.9895
+diagnosis_code=3           0.965
+diagnosis_code=4          0.9347
+diagnosis_code=5          1.4743
+diagnosis_code=6          1.0409
+diagnosis_code=9          1.3361
+diagnosis_code=10         0.9392
+diagnosis_code=11         0.4799
+diagnosis_code=12         0.7255
+diagnosis_code=13         1.2174
+diagnosis_code=14         0.6023
+diagnosis_code=15         0.8245
+diagnosis_code=18         0.7245
+diagnosis_code=19         0.8597
+diagnosis_code=20         0.7294
+diagnosis_code=21         0.9255
+diagnosis_code=22         0.2827
+diagnosis_code=24         0.5964
+diagnosis_code=25         1.5142
+diagnosis_code=26    264853.8297
+diagnosis_code=33         0.8311
+diagnosis_code=99         1.1111
+remoteness=1              1.1833
+remoteness=2              0.8598
+remoteness=3              0.8639
+remoteness=4              0.7536
+remoteness=5              3.2135
+
+
+
+Correctly Classified Instances       36687               89.2063 %
+Incorrectly Classified Instances      4439               10.7937 %
+Kappa statistic                          0     
+Mean absolute error                      0.1869
+Root mean squared error                  0.3061
+Relative absolute error                 97.0679 %
+Root relative squared error             98.6407 %
+Total Number of Instances            41126     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.892      1.000    0.943      ?        0.638     0.929     0
+                 0.000    0.000    ?          0.000    ?          ?        0.638     0.181     1
+Weighted Avg.    0.892    0.892    ?          0.892    ?          ?        0.638     0.848     
+
+[[36687.     0.]
+ [ 4439.     0.]]
+
+Class 0 details
+Area under ROC: 0.6380756579315999
+False negatives: 0.0
+True negatives: 0.0
+False positives: 4439.0
+True positives: 36687.0
+
+Class 1 details
+Area under ROC: 0.6380756579315999
+False negatives: 4439.0
+True negatives: 36687.0
+False positives: 0.0
+True positives: 0.0
+

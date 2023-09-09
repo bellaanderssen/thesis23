@@ -1,0 +1,68 @@
+Classifier: weka.classifiers.functions.MultilayerPerceptron
+Options: -H 1 -N 50
+Classifier build time (HH:mm:ss): 0:00:01.390765
+Evaluation time (HH:mm:ss): 0:00:16.068488
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -0.21262324197782556
+    Node 2    2.4829092240834894
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    0.21262324197782415
+    Node 2    -2.482909224083487
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    1.2835945528642558
+    Attrib source_referral=self/family/friends    -0.3132863978931049
+    Attrib source_referral=community_org    -4.367649689713373
+    Attrib source_referral=other    -0.04254487253886226
+    Attrib source_referral=clinic    -0.01971287344599068
+    Attrib source_referral=hospital    0.8376601364697576
+    Attrib triage_category=1    1.1557699460900757
+    Attrib triage_category=2    0.3873140291277025
+    Attrib triage_category=3    0.38069944481318546
+    Attrib triage_category=4    -1.192187142231379
+    Attrib triage_category=5    -4.605734712716063
+Class 0
+    Input
+    Node 0
+Class 1
+    Input
+    Node 1
+
+
+
+Correctly Classified Instances       36757               89.3766 %
+Incorrectly Classified Instances      4369               10.6234 %
+Kappa statistic                          0.0625
+Mean absolute error                      0.1836
+Root mean squared error                  0.3054
+Relative absolute error                 95.3227 %
+Root relative squared error             98.4363 %
+Total Number of Instances            41126     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.997    0.960    0.896      0.997    0.944      0.138    0.580     0.908     0
+                 0.040    0.003    0.624      0.040    0.075      0.138    0.580     0.190     1
+Weighted Avg.    0.894    0.857    0.866      0.894    0.850      0.138    0.580     0.831     
+
+[[36581.   106.]
+ [ 4263.   176.]]
+
+Class 0 details
+Area under ROC: 0.579900085471249
+False negatives: 106.0
+True negatives: 176.0
+False positives: 4263.0
+True positives: 36581.0
+
+Class 1 details
+Area under ROC: 0.579900085471249
+False negatives: 4263.0
+True negatives: 36581.0
+False positives: 106.0
+True positives: 176.0
+

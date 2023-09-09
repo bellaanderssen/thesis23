@@ -1,0 +1,48 @@
+Classifier: weka.classifiers.rules.OneR
+Options: default
+Classifier build time (HH:mm:ss): 0:00:00.037438
+Evaluation time (HH:mm:ss): 0:00:00.224478
+
+source_referral:
+	self/family/friends	-> 0
+	community_org	-> 0
+	other	-> 0
+	clinic	-> 0
+	hospital	-> 0
+(36687/41126 instances correct)
+
+
+
+Correctly Classified Instances       36687               89.2063 %
+Incorrectly Classified Instances      4439               10.7937 %
+Kappa statistic                          0     
+Mean absolute error                      0.1079
+Root mean squared error                  0.3285
+Relative absolute error                 56.045  %
+Root relative squared error            105.8771 %
+Total Number of Instances            41126     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.892      1.000    0.943      ?        0.500     0.892     0
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.108     1
+Weighted Avg.    0.892    0.892    ?          0.892    ?          ?        0.500     0.807     
+
+[[36687.     0.]
+ [ 4439.     0.]]
+
+Class 0 details
+Area under ROC: 0.5
+False negatives: 0.0
+True negatives: 0.0
+False positives: 4439.0
+True positives: 36687.0
+
+Class 1 details
+Area under ROC: 0.5
+False negatives: 4439.0
+True negatives: 36687.0
+False positives: 0.0
+True positives: 0.0
+

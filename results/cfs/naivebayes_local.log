@@ -1,0 +1,63 @@
+Classifier: weka.classifiers.bayes.NaiveBayes
+Options: default
+Classifier build time (HH:mm:ss): 0:00:00.039052
+Evaluation time (HH:mm:ss): 0:00:00.497697
+
+Naive Bayes Classifier
+
+                          Class
+Attribute                     0       1
+                         (0.89)  (0.11)
+========================================
+source_referral
+  self/family/friends    32885.0  3763.0
+  community_org            485.0   346.0
+  other                    545.0    79.0
+  clinic                  2535.0   230.0
+  hospital                 242.0    26.0
+  [total]                36692.0  4444.0
+
+triage_category
+  1                        191.0    12.0
+  2                       4738.0   456.0
+  3                      12372.0  1267.0
+  4                      15587.0  1658.0
+  5                       3804.0  1051.0
+  [total]                36692.0  4444.0
+
+
+
+
+Correctly Classified Instances       36775               89.4203 %
+Incorrectly Classified Instances      4351               10.5797 %
+Kappa statistic                          0.0663
+Mean absolute error                      0.1854
+Root mean squared error                  0.3048
+Relative absolute error                 96.2413 %
+Root relative squared error             98.2279 %
+Total Number of Instances            41126     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.997    0.958    0.896      0.997    0.944      0.147    0.585     0.912     0
+                 0.042    0.003    0.656      0.042    0.078      0.147    0.585     0.187     1
+Weighted Avg.    0.894    0.855    0.870      0.894    0.850      0.147    0.585     0.834     
+
+[[36590.    97.]
+ [ 4254.   185.]]
+
+Class 0 details
+Area under ROC: 0.5849649599072708
+False negatives: 97.0
+True negatives: 185.0
+False positives: 4254.0
+True positives: 36590.0
+
+Class 1 details
+Area under ROC: 0.5849649599072708
+False negatives: 4254.0
+True negatives: 36590.0
+False positives: 97.0
+True positives: 185.0
+

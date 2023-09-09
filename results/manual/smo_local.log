@@ -1,0 +1,96 @@
+Classifier: weka.classifiers.functions.SMO
+Options: default
+Classifier build time (HH:mm:ss): 0:06:43.745829
+Evaluation time (HH:mm:ss): 0:40:11.894317
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: 0, 1
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0001 * (normalized) age=46-65
+ +      -0.0003 * (normalized) age=0-5
+ +       0.0002 * (normalized) age=16-25
+ +       0.0001 * (normalized) age=66-85
+ +       0.0001 * (normalized) age=26-45
+ +      -0.0002 * (normalized) age=6-15
+ +       0.0001 * (normalized) age=86+
+ +      -0.0004 * (normalized) icu_status=True
+ +       0.0002 * (normalized) triage_category=1
+ +       0.0001 * (normalized) triage_category=2
+ +      -0      * (normalized) triage_category=3
+ +      -0.0002 * (normalized) triage_category=4
+ +      -0.0001 * (normalized) triage_category=5
+ +      -0.0001 * (normalized) diagnosis_code=1
+ +       0.0001 * (normalized) diagnosis_code=2
+ +      -0.0003 * (normalized) diagnosis_code=3
+ +       0.0001 * (normalized) diagnosis_code=4
+ +      -0.0002 * (normalized) diagnosis_code=5
+ +       0.0002 * (normalized) diagnosis_code=6
+ +       0.0002 * (normalized) diagnosis_code=9
+ +      -0.0002 * (normalized) diagnosis_code=10
+ +      -0.0003 * (normalized) diagnosis_code=11
+ +      -0.0001 * (normalized) diagnosis_code=12
+ +       0.0001 * (normalized) diagnosis_code=13
+ +      -0.0001 * (normalized) diagnosis_code=14
+ +      -0.0001 * (normalized) diagnosis_code=15
+ +      -0.0002 * (normalized) diagnosis_code=18
+ +      -0.0002 * (normalized) diagnosis_code=19
+ +       0.0002 * (normalized) diagnosis_code=20
+ +       0.0002 * (normalized) diagnosis_code=21
+ +       0.0007 * (normalized) diagnosis_code=22
+ +       0.0004 * (normalized) diagnosis_code=24
+ +       0.0003 * (normalized) diagnosis_code=25
+ +      -0.0004 * (normalized) diagnosis_code=33
+ +      -0.0005 * (normalized) diagnosis_code=99
+ +       0.0001 * (normalized) remoteness=1
+ +      -0      * (normalized) remoteness=2
+ +      -0.0001 * (normalized) remoteness=3
+ +      -0.0004 * (normalized) remoteness=4
+ +       0.0003 * (normalized) remoteness=5
+ -       0.9999
+
+Number of kernel evaluations: 675854764 (16.372% cached)
+
+
+
+
+Correctly Classified Instances       36687               89.2063 %
+Incorrectly Classified Instances      4439               10.7937 %
+Kappa statistic                          0     
+Mean absolute error                      0.1079
+Root mean squared error                  0.3285
+Relative absolute error                 56.045  %
+Root relative squared error            105.8771 %
+Total Number of Instances            41126     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.892      1.000    0.943      ?        0.500     0.892     0
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.108     1
+Weighted Avg.    0.892    0.892    ?          0.892    ?          ?        0.500     0.807     
+
+[[36687.     0.]
+ [ 4439.     0.]]
+
+Class 0 details
+Area under ROC: 0.5
+False negatives: 0.0
+True negatives: 0.0
+False positives: 4439.0
+True positives: 36687.0
+
+Class 1 details
+Area under ROC: 0.5
+False negatives: 4439.0
+True negatives: 36687.0
+False positives: 0.0
+True positives: 0.0
+

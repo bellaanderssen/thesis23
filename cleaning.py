@@ -4,11 +4,18 @@ from contextlib import redirect_stdout
 
 # For local machine
 SPECIFIC_OUTPUT_DIR = "/home/bellaando/thesis23/clean_data/"
-DATA_SOURCE = "/home/bellaando/thesis23/TestED.csv"
+DATA_SOURCE = "/home/bellaando/thesis23/local.csv"
+SUFFIX = "_local"
 
-# For ARTEMIS
+# For ARTEMIS truncated
 # SPECIFIC_OUTPUT_DIR = "/project/RDS-FEI-START2-RW/clean_data/"
 # DATA_SOURCE = "/project/RDS-FEI-START2-RW/TestED.csv"
+# SUFFIX = "_truncated"
+
+# For ARTEMIS big one
+# SPECIFIC_OUTPUT_DIR = "/project/RDS-FEI-START2-RW/clean_data/"
+# DATA_SOURCE = "/scratch/RDS-FEI-START2-RW/bellanew.csv"
+# SUFFIX = "_full"
 
 TARGET_VAR = 'repres7days'
 SELECTED_COLUMNS = ['age_recode',
@@ -209,12 +216,12 @@ df = df[(df.death_status != "True") & (df.diagnosis_code != 0)]
 # print(df.head())
 
 # export new clean data to csv
-df.to_csv(SPECIFIC_OUTPUT_DIR + 'no_FS.csv', index=False)
+df.to_csv(SPECIFIC_OUTPUT_DIR + 'no_FS' + SUFFIX + '.csv', index=False)
 
 # export manual FS clean data to csv
-df.to_csv(SPECIFIC_OUTPUT_DIR + 'manual_FS.csv', index=False, columns=['age', 'icu_status', 'triage_category', 'diagnosis_code', 'remoteness', 'repres7days'])
+df.to_csv(SPECIFIC_OUTPUT_DIR + 'manual_FS' + SUFFIX + '.csv', index=False, columns=['age', 'icu_status', 'triage_category', 'diagnosis_code', 'remoteness', 'repres7days'])
 
 # cross tabulate all new variables
-with open(SPECIFIC_OUTPUT_DIR + 'summary.txt', 'w') as f:
+with open(SPECIFIC_OUTPUT_DIR + 'summary' + SUFFIX + '.txt', 'w') as f:
     with redirect_stdout(f):
         output_analytics(df)

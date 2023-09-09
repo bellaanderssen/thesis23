@@ -1,0 +1,137 @@
+Classifier: weka.classifiers.functions.Logistic
+Options: default
+Classifier build time (HH:mm:ss): 0:00:07.211440
+Evaluation time (HH:mm:ss): 0:00:35.720906
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                                       Class
+Variable                                                   0
+============================================================
+triage_category=1                                     0.7693
+triage_category=2                                     0.2144
+triage_category=3                                     0.1728
+triage_category=4                                     0.0615
+triage_category=5                                     -0.775
+source_referral=self/family/friends                   0.1015
+source_referral=community_org                        -1.5035
+source_referral=other                                -0.0491
+source_referral=clinic                                0.3246
+source_referral=hospital                              0.0364
+diagnosis_code=1                                     -0.2736
+diagnosis_code=2                                     -0.0289
+diagnosis_code=3                                     -0.0399
+diagnosis_code=4                                     -0.0752
+diagnosis_code=5                                      0.3969
+diagnosis_code=6                                      0.0339
+diagnosis_code=9                                      0.2476
+diagnosis_code=10                                    -0.1034
+diagnosis_code=11                                    -0.6914
+diagnosis_code=12                                    -0.3188
+diagnosis_code=13                                     0.1783
+diagnosis_code=14                                    -0.4576
+diagnosis_code=15                                    -0.2294
+diagnosis_code=18                                    -0.4396
+diagnosis_code=19                                    -0.1434
+diagnosis_code=20                                    -0.3367
+diagnosis_code=21                                    -0.1195
+diagnosis_code=22                                    -1.2952
+diagnosis_code=24                                    -0.6195
+diagnosis_code=25                                      0.426
+diagnosis_code=26                                   182.8284
+diagnosis_code=33                                    -0.1183
+diagnosis_code=99                                      0.194
+remoteness=1                                          0.1602
+remoteness=2                                         -0.1595
+remoteness=3                                         -0.1379
+remoteness=4                                         -0.2449
+remoteness=5                                          1.4728
+EDLOS=25+                                             0.0514
+EDLOS=5-12                                            0.1236
+EDLOS=13-24                                          -0.0648
+EDLOS=0-4                                            -0.9351
+Intercept                                             2.0145
+
+
+Odds Ratios...
+                                                       Class
+Variable                                                   0
+============================================================
+triage_category=1                                     2.1582
+triage_category=2                                     1.2392
+triage_category=3                                     1.1886
+triage_category=4                                     1.0634
+triage_category=5                                     0.4607
+source_referral=self/family/friends                   1.1068
+source_referral=community_org                         0.2224
+source_referral=other                                 0.9521
+source_referral=clinic                                1.3835
+source_referral=hospital                               1.037
+diagnosis_code=1                                      0.7606
+diagnosis_code=2                                      0.9715
+diagnosis_code=3                                      0.9609
+diagnosis_code=4                                      0.9276
+diagnosis_code=5                                      1.4873
+diagnosis_code=6                                      1.0345
+diagnosis_code=9                                       1.281
+diagnosis_code=10                                     0.9017
+diagnosis_code=11                                     0.5009
+diagnosis_code=12                                      0.727
+diagnosis_code=13                                     1.1952
+diagnosis_code=14                                     0.6328
+diagnosis_code=15                                      0.795
+diagnosis_code=18                                     0.6443
+diagnosis_code=19                                     0.8664
+diagnosis_code=20                                     0.7141
+diagnosis_code=21                                     0.8874
+diagnosis_code=22                                     0.2739
+diagnosis_code=24                                     0.5382
+diagnosis_code=25                                     1.5311
+diagnosis_code=26                      2.5197796120828268E79
+diagnosis_code=33                                     0.8884
+diagnosis_code=99                                     1.2141
+remoteness=1                                          1.1738
+remoteness=2                                          0.8526
+remoteness=3                                          0.8712
+remoteness=4                                          0.7828
+remoteness=5                                          4.3614
+EDLOS=25+                                             1.0527
+EDLOS=5-12                                            1.1316
+EDLOS=13-24                                           0.9373
+EDLOS=0-4                                             0.3926
+
+
+
+Correctly Classified Instances       36695               89.2258 %
+Incorrectly Classified Instances      4431               10.7742 %
+Kappa statistic                          0.0398
+Mean absolute error                      0.1838
+Root mean squared error                  0.3035
+Relative absolute error                 95.4386 %
+Root relative squared error             97.8124 %
+Total Number of Instances            41126     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.997    0.974    0.894      0.997    0.943      0.098    0.650     0.931     0
+                 0.026    0.003    0.518      0.026    0.050      0.098    0.650     0.214     1
+Weighted Avg.    0.892    0.869    0.854      0.892    0.846      0.098    0.650     0.854     
+
+[[36579.   108.]
+ [ 4323.   116.]]
+
+Class 0 details
+Area under ROC: 0.6496357160507966
+False negatives: 108.0
+True negatives: 116.0
+False positives: 4323.0
+True positives: 36579.0
+
+Class 1 details
+Area under ROC: 0.6496357160507966
+False negatives: 4323.0
+True negatives: 36579.0
+False positives: 108.0
+True positives: 116.0
+
