@@ -2,6 +2,7 @@ import argparse
 import helpers
 import os
 import sys
+import csv
 
 from configparser import ConfigParser
 from datetime import datetime

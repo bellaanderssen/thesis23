@@ -1,7 +1,7 @@
 Classifier: weka.classifiers.lazy.IBk
 Options: -K 1 -A weka.core.neighboursearch.KDTree
-Classifier build time (HH:mm:ss): 0:00:00.033396
-Evaluation time (HH:mm:ss): 0:00:30.331436
+Classifier build time (HH:mm:ss): 0:00:00.048513
+Evaluation time (HH:mm:ss): 0:00:30.306826
 
 IB1 instance-based classifier
 using 1 nearest neighbour(s) for classification
@@ -28,14 +28,14 @@ Weighted Avg.    0.894    0.855    0.870      0.894    0.850      0.147    0.586
  [ 4254.   185.]]
 
 Class 0 details
-Area under ROC: 0.5863062075639928
+Area under ROC: 0.5863062321259317
 False negatives: 97.0
 True negatives: 185.0
 False positives: 4254.0
 True positives: 36590.0
 
 Class 1 details
-Area under ROC: 0.5863062075639928
+Area under ROC: 0.5863062321259317
 False negatives: 4254.0
 True negatives: 36590.0
 False positives: 97.0

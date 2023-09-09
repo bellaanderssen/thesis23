@@ -55,96 +55,98 @@ def count_rows_containing_nan(df):
 
 def age_to_nominal(age: float) -> int:
     if age < 6:
-        return 0
+        return "0-5"
     elif age < 16:
-        return 1
+        return "6-15"
     elif age < 26:
-        return 2
+        return "16-25"
     elif age < 46:
-        return 3
+        return "26-45"
     elif age < 66:
-        return 4
+        return "46-65"
     elif age < 86:
-        return 5
-    return 6
+        return "66-85"
+    return "86+"
 
-def sex_to_nominal(sex: int) -> int:
+def sex_to_nominal(sex: int) -> str:
     if sex not in [1, 2, 3, 9]: # M, F, I, UNKNOWN respectively
         raise ValueError("Unexpected sex value")
-    if sex > 3: # catchall "other"
-        return 3
-    return sex
+    elif sex == 1:
+        return "M"
+    elif sex == 2:
+        return "F"
+    return "other"
 
-def source_of_referral_to_nominal(source: int) -> int:
+def source_of_referral_to_nominal(source: int) -> str:
     if source == 1: # self, family, friends
-        return 0
+        return "self/family/friends"
     elif source <= 4: # clinic
-        return 1
+        return "clinic"
     elif source <= 9: # hospital
-        return 2
+        return "hospital"
     elif source <= 16: # community org
-        return 3
-    return 4 # other
+        return "community_org"
+    return "other"
 
-def referred_to_on_departure_to_nominal(source: int) -> int:
+def referred_to_on_departure_to_nominal(source: int) -> str:
     if source < 3: # review in ED
-        return 0
+        return "ED_review"
     elif source == 8: # not referred
-        return 1
+        return "no_referral"
     elif source == 9: # unknown
-        return 2
-    return 3 # referred to specialist or social work
+        return "unknown"
+    return "specialist" # referred to specialist or social work
 
-def preferred_language_ascl_to_nominal(language: int) -> int:
+def preferred_language_ascl_to_nominal(language: int) -> str:
     if language < 1000: # unknown or nonverbal
-        return 0
+        return "none"
     elif language == 1201: # english
-        return 1
+        return "english"
     elif language < 4000: # european
-        return 2
+        return "european"
     elif language < 5000: # middle eastern
-        return 3
+        return "middle eastern"
     elif language < 8000: # asian
-        return 4
-    return 5 # catchall other
+        return "asian"
+    return "other" # catchall other
 
-def mode_of_arrival_to_nominal(mode: int) -> int:
+def mode_of_arrival_to_nominal(mode: int) -> str:
     if mode in [1, 4, 5, 6]: # ambulance of some sort
-        return 0
+        return "ambulance"
     elif mode == 3: # private vehicle
-        return 1
-    return 2
+        return "private_vehicle"
+    return "other"
 
-def mode_of_separation_to_nominal(mode: int) -> int:
+def mode_of_separation_to_nominal(mode: int) -> str:
     if mode in [1, 2, 5, 9, 10, 11, 12]: # admitted
-        return 0
+        return "admitted"
     elif mode in [3, 8, 99]: # died or error
-        return 1
+        return "died/other"
     elif mode in [6, 7, 13]: # left against advice
-        return 2
-    return 3 # released from ED
+        return "left_against_advice"
+    return "released" # released from ED
 
-def hours_in_icu_to_nominal(hours: int) -> int:
+def hours_in_icu_to_nominal(hours: int) -> str:
     if hours > 0: # attended ICU
-        return 1
-    return 0
+        return "True"
+    return "False"
 
-def final_diagnosis_subcode_to_nominal(code: float) -> int:
+def final_diagnosis_subcode_to_nominal(code: float) -> str:
     return int(np.floor(code))
 
-def ed_los_to_nominal(hours: int) -> int:
+def ed_los_to_nominal(hours: int) -> str:
     if hours <= 4:
-        return 0
+        return "0-4"
     elif hours <= 12:
-        return 1
+        return "5-12"
     elif hours <= 24:
-        return 2
-    return 3
+        return "13-24"
+    return "25+"
 
-def death_to_nominal(date: str) -> int:
+def death_to_nominal(date: str) -> str:
     if date != 0:
-        return 1
-    return 0
+        return "True"
+    return "False"
 
 def output_analytics(df):
     # Count number of instances containing missing values
@@ -197,17 +199,20 @@ df['EDLOS'] = df['EDLOS'].apply(ed_los_to_nominal)
 df = df.dropna(how = 'any')
 assert not df.isnull().values.any()
 
-# convert everything to nominal ints
+# convert leftovers to nominal ints
 df['triage_category'] = df['triage_category'].astype(int)
 df['remoteness'] = df['remoteness'].astype(int)
 
 # get rid of corner cases; if patient died OR they had no diagnosis
-df = df[(df.death_status != 1) & (df.diagnosis_code != 0)]
+df = df[(df.death_status != "True") & (df.diagnosis_code != 0)]
 
 # print(df.head())
 
 # export new clean data to csv
-df.to_csv(SPECIFIC_OUTPUT_DIR + 'no_feature_selection_1.csv', index=False)
+df.to_csv(SPECIFIC_OUTPUT_DIR + 'no_FS.csv', index=False)
+
+# export manual FS clean data to csv
+df.to_csv(SPECIFIC_OUTPUT_DIR + 'manual_FS.csv', index=False, columns=['age', 'icu_status', 'triage_category', 'diagnosis_code', 'remoteness', 'repres7days'])
 
 # cross tabulate all new variables
 with open(SPECIFIC_OUTPUT_DIR + 'summary.txt', 'w') as f:

@@ -1,7 +1,7 @@
 Classifier: weka.classifiers.lazy.IBk
 Options: -K 5 -A weka.core.neighboursearch.KDTree
-Classifier build time (HH:mm:ss): 0:00:00.009606
-Evaluation time (HH:mm:ss): 0:00:36.336567
+Classifier build time (HH:mm:ss): 0:00:00.011807
+Evaluation time (HH:mm:ss): 0:00:37.424694
 
 IB1 instance-based classifier
 using 5 nearest neighbour(s) for classification
@@ -11,10 +11,10 @@ using 5 nearest neighbour(s) for classification
 Correctly Classified Instances       36775               89.4203 %
 Incorrectly Classified Instances      4351               10.5797 %
 Kappa statistic                          0.0663
-Mean absolute error                      0.1852
+Mean absolute error                      0.1851
 Root mean squared error                  0.3043
-Relative absolute error                 96.1417 %
-Root relative squared error             98.0782 %
+Relative absolute error                 96.1306 %
+Root relative squared error             98.0726 %
 Total Number of Instances            41126     
 
 === Detailed Accuracy By Class ===
@@ -28,14 +28,14 @@ Weighted Avg.    0.894    0.855    0.870      0.894    0.850      0.147    0.586
  [ 4254.   185.]]
 
 Class 0 details
-Area under ROC: 0.5860086273933176
+Area under ROC: 0.5860317585992715
 False negatives: 97.0
 True negatives: 185.0
 False positives: 4254.0
 True positives: 36590.0
 
 Class 1 details
-Area under ROC: 0.5860086273933176
+Area under ROC: 0.5860317585992715
 False negatives: 4254.0
 True negatives: 36590.0
 False positives: 97.0

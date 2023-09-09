@@ -1,13 +1,33 @@
-Classifier: weka.classifiers.rules.OneR
+Classifier: weka.classifiers.functions.SMO
 Options: default
-Classifier build time (HH:mm:ss): 0:00:00.038952
-Evaluation time (HH:mm:ss): 0:00:00.163035
+Classifier build time (HH:mm:ss): 0:00:32.851920
+Evaluation time (HH:mm:ss): 0:04:02.359592
 
-sex:
-	F	-> 0
-	M	-> 0
-	other	-> 1
-(36688/41126 instances correct)
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: 0, 1
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0001 * (normalized) source_referral=self/family/friends
+ +       0.0006 * (normalized) source_referral=community_org
+ +      -0.0001 * (normalized) source_referral=other
+ +      -0.0002 * (normalized) source_referral=clinic
+ +      -0.0003 * (normalized) source_referral=hospital
+ +      -0.0006 * (normalized) triage_category=1
+ +       0.0001 * (normalized) triage_category=2
+ +       0.0001 * (normalized) triage_category=3
+ +       0.0004 * (normalized) triage_category=4
+ +      -0.0001 * (normalized) triage_category=5
+ -       1.0001
+
+Number of kernel evaluations: 246279501 (38.846% cached)
+
 
 
 

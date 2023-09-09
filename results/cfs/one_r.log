@@ -1,14 +1,14 @@
 Classifier: weka.classifiers.rules.OneR
 Options: default
-Classifier build time (HH:mm:ss): 0:00:00.014760
-Evaluation time (HH:mm:ss): 0:00:00.072158
+Classifier build time (HH:mm:ss): 0:00:00.011256
+Evaluation time (HH:mm:ss): 0:00:00.077472
 
 source_referral:
-	0	-> 0
-	1	-> 0
-	2	-> 0
-	3	-> 0
-	4	-> 0
+	self/family/friends	-> 0
+	community_org	-> 0
+	other	-> 0
+	clinic	-> 0
+	hospital	-> 0
 (36687/41126 instances correct)
 
 

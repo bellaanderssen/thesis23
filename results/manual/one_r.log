@@ -1,13 +1,17 @@
 Classifier: weka.classifiers.rules.OneR
 Options: default
-Classifier build time (HH:mm:ss): 0:00:00.038952
-Evaluation time (HH:mm:ss): 0:00:00.163035
+Classifier build time (HH:mm:ss): 0:00:00.036666
+Evaluation time (HH:mm:ss): 0:00:00.139728
 
-sex:
-	F	-> 0
-	M	-> 0
-	other	-> 1
-(36688/41126 instances correct)
+age:
+	46-65	-> 0
+	0-5	-> 0
+	16-25	-> 0
+	66-85	-> 0
+	26-45	-> 0
+	6-15	-> 0
+	86+	-> 0
+(36687/41126 instances correct)
 
 
 

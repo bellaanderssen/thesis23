@@ -1,7 +1,7 @@
 Classifier: weka.classifiers.bayes.BayesNet
 Options: default
-Classifier build time (HH:mm:ss): 0:00:00.450348
-Evaluation time (HH:mm:ss): 0:00:04.346109
+Classifier build time (HH:mm:ss): 0:00:00.454989
+Evaluation time (HH:mm:ss): 0:00:03.195103
 
 Bayes Network Classifier
 Using ADTree
@@ -22,9 +22,9 @@ EDLOS(4): repres7days
 remoteness(5): repres7days 
 death_status(1): repres7days 
 repres7days(2): 
-LogScore Bayes: -503499.8143936656
+LogScore Bayes: -503499.8143936655
 LogScore BDeu: -503855.1617604777
-LogScore MDL: -503897.57582832035
+LogScore MDL: -503897.57582832023
 LogScore ENTROPY: -503201.6779031661
 LogScore AIC: -503332.6779031661
 

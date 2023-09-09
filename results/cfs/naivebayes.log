@@ -1,29 +1,29 @@
 Classifier: weka.classifiers.bayes.NaiveBayes
 Options: default
-Classifier build time (HH:mm:ss): 0:00:00.018403
-Evaluation time (HH:mm:ss): 0:00:00.129780
+Classifier build time (HH:mm:ss): 0:00:00.010122
+Evaluation time (HH:mm:ss): 0:00:00.095162
 
 Naive Bayes Classifier
 
-                    Class
-Attribute               0       1
-                   (0.89)  (0.11)
-==================================
+                          Class
+Attribute                     0       1
+                         (0.89)  (0.11)
+========================================
 source_referral
-  0                32885.0  3763.0
-  1                 2535.0   230.0
-  2                  242.0    26.0
-  3                  485.0   346.0
-  4                  545.0    79.0
-  [total]          36692.0  4444.0
+  self/family/friends    32885.0  3763.0
+  community_org            485.0   346.0
+  other                    545.0    79.0
+  clinic                  2535.0   230.0
+  hospital                 242.0    26.0
+  [total]                36692.0  4444.0
 
 triage_category
-  1                  191.0    12.0
-  2                 4738.0   456.0
-  3                12372.0  1267.0
-  4                15587.0  1658.0
-  5                 3804.0  1051.0
-  [total]          36692.0  4444.0
+  1                        191.0    12.0
+  2                       4738.0   456.0
+  3                      12372.0  1267.0
+  4                      15587.0  1658.0
+  5                       3804.0  1051.0
+  [total]                36692.0  4444.0
 
 
 

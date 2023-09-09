@@ -1,21 +1,21 @@
 Classifier: weka.classifiers.trees.J48
 Options: -C 0.25
-Classifier build time (HH:mm:ss): 0:00:00.055011
-Evaluation time (HH:mm:ss): 0:00:00.135917
+Classifier build time (HH:mm:ss): 0:00:00.046238
+Evaluation time (HH:mm:ss): 0:00:00.139160
 
 J48 pruned tree
 ------------------
 
-source_referral = 0: 0 (36646.0/3762.0)
-source_referral = 1: 0 (2763.0/229.0)
-source_referral = 2: 0 (266.0/25.0)
-source_referral = 3
+source_referral = self/family/friends: 0 (36646.0/3762.0)
+source_referral = community_org
 |   triage_category = 1: 0 (6.0)
 |   triage_category = 2: 0 (81.0/11.0)
 |   triage_category = 3: 0 (173.0/30.0)
 |   triage_category = 4: 0 (287.0/119.0)
 |   triage_category = 5: 1 (282.0/97.0)
-source_referral = 4: 0 (622.0/78.0)
+source_referral = other: 0 (622.0/78.0)
+source_referral = clinic: 0 (2763.0/229.0)
+source_referral = hospital: 0 (266.0/25.0)
 
 Number of Leaves  : 	9
 

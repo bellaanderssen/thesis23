@@ -1,23 +1,18 @@
-Classifier: weka.classifiers.rules.OneR
+Classifier: weka.classifiers.rules.ZeroR
 Options: default
-Classifier build time (HH:mm:ss): 0:00:00.038952
-Evaluation time (HH:mm:ss): 0:00:00.163035
+Classifier build time (HH:mm:ss): 0:00:00.015210
+Evaluation time (HH:mm:ss): 0:00:00.142484
 
-sex:
-	F	-> 0
-	M	-> 0
-	other	-> 1
-(36688/41126 instances correct)
-
+ZeroR predicts class value: 0
 
 
 Correctly Classified Instances       36687               89.2063 %
 Incorrectly Classified Instances      4439               10.7937 %
 Kappa statistic                          0     
-Mean absolute error                      0.1079
-Root mean squared error                  0.3285
-Relative absolute error                 56.045  %
-Root relative squared error            105.8771 %
+Mean absolute error                      0.1926
+Root mean squared error                  0.3103
+Relative absolute error                100      %
+Root relative squared error            100      %
 Total Number of Instances            41126     
 
 === Detailed Accuracy By Class ===
@@ -31,14 +26,14 @@ Weighted Avg.    0.892    0.892    ?          0.892    ?          ?        0.500
  [ 4439.     0.]]
 
 Class 0 details
-Area under ROC: 0.5
+Area under ROC: 0.49986999979791663
 False negatives: 0.0
 True negatives: 0.0
 False positives: 4439.0
 True positives: 36687.0
 
 Class 1 details
-Area under ROC: 0.5
+Area under ROC: 0.49986999979791663
 False negatives: 4439.0
 True negatives: 36687.0
 False positives: 0.0

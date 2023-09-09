@@ -1,9 +1,6 @@
-#!/bin/bash
-
-#PBS -P RDS-FEI-START2-RW
 #PBS -M iand8846@uni.sydney.edu.au
 #PBS -m abe
-#PBS -N FS_1
+#PBS -N CLASSIFY_MANUAL_1
 #PBS -q defaultQ
 #PBS -l select=1:ncpus=1:mem=16GB
 #PBS -l walltime=03:00:00
@@ -18,4 +15,4 @@ pip install --user python-weka-wrapper3
 cd $PBS_O_WORKDIR
 
 # python feature_selection script
-python feature_selection.py feature_selection
+python evaluate.py results/manual

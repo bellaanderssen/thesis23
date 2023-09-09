@@ -1,7 +1,7 @@
 Classifier: weka.classifiers.rules.OneR
 Options: default
-Classifier build time (HH:mm:ss): 0:00:00.019857
-Evaluation time (HH:mm:ss): 0:00:00.088821
+Classifier build time (HH:mm:ss): 0:00:00.025613
+Evaluation time (HH:mm:ss): 0:00:00.127879
 
 triage_category:
 	1	-> 0

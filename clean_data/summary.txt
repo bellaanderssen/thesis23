@@ -1,62 +1,62 @@
 repres7days      0     1    All
 age                            
-0             4951   489   5440
-1             3841   383   4224
-2             5480   809   6289
-3             8601  1180   9781
-4             7196   838   8034
-5             5637   649   6286
-6              981    91   1072
+0-5           4951   489   5440
+16-25         5480   809   6289
+26-45         8601  1180   9781
+46-65         7196   838   8034
+6-15          3841   383   4224
+66-85         5637   649   6286
+86+            981    91   1072
 All          36687  4439  41126 
 
 repres7days      0     1    All
 sex                            
-1            18506  2222  20728
-2            18181  2216  20397
-3                0     1      1
+F            18181  2216  20397
+M            18506  2222  20728
+other            0     1      1
 All          36687  4439  41126 
 
-repres7days          0     1    All
-source_referral                    
-0                32884  3762  36646
-1                 2534   229   2763
-2                  241    25    266
-3                  484   345    829
-4                  544    78    622
-All              36687  4439  41126 
+repres7days              0     1    All
+source_referral                        
+clinic                2534   229   2763
+community_org          484   345    829
+hospital               241    25    266
+other                  544    78    622
+self/family/friends  32884  3762  36646
+All                  36687  4439  41126 
 
 repres7days             0     1    All
 departure_referral                    
-0                    1220   224   1444
-1                    2263   272   2535
-2                    1238   211   1449
-3                   31966  3732  35698
+ED_review            1220   224   1444
+no_referral          2263   272   2535
+specialist          31966  3732  35698
+unknown              1238   211   1449
 All                 36687  4439  41126 
 
 repres7days             0     1    All
 preferred_language                    
-0                     122    10    132
-1                   32710  4026  36736
-2                    1459   139   1598
-3                     763    88    851
-4                    1206   129   1335
-5                     427    47    474
+asian                1206   129   1335
+english             32710  4026  36736
+european             1459   139   1598
+middle eastern        763    88    851
+none                  122    10    132
+other                 427    47    474
 All                 36687  4439  41126 
 
-repres7days       0     1    All
-arrival_mode                    
-0              6889   723   7612
-1             28115  3488  31603
-2              1683   228   1911
-All           36687  4439  41126 
-
 repres7days          0     1    All
-separation_mode                    
-0                 9649  1185  10834
-1                    7     1      8
-2                 1532   203   1735
-3                25499  3050  28549
+arrival_mode                       
+ambulance         6889   723   7612
+other             1683   228   1911
+private_vehicle  28115  3488  31603
 All              36687  4439  41126 
+
+repres7days              0     1    All
+separation_mode                        
+admitted              9649  1185  10834
+died/other               7     1      8
+left_against_advice   1532   203   1735
+released             25499  3050  28549
+All                  36687  4439  41126 
 
 repres7days          0     1    All
 triage_category                    
@@ -69,8 +69,8 @@ All              36687  4439  41126
 
 repres7days      0     1    All
 icu_status                     
-0            36463  4407  40870
-1              224    32    256
+False        36463  4407  40870
+True           224    32    256
 All          36687  4439  41126 
 
 repres7days         0     1    All
@@ -113,10 +113,10 @@ All          36687  4439  41126
 
 repres7days      0     1    All
 EDLOS                          
-0               45    27     72
-1              371    78    449
-2              801   176    977
-3            35470  4158  39628
+0-4             45    27     72
+13-24          801   176    977
+25+          35470  4158  39628
+5-12           371    78    449
 All          36687  4439  41126 
 
 repres7days      0     1    All
@@ -130,6 +130,6 @@ All          36687  4439  41126
 
 repres7days       0     1    All
 death_status                    
-0             36687  4439  41126
+False         36687  4439  41126
 All           36687  4439  41126 
 

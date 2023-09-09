@@ -1,29 +1,29 @@
 Classifier: weka.classifiers.functions.MultilayerPerceptron
 Options: -H 1 -N 50
-Classifier build time (HH:mm:ss): 0:00:00.756110
-Evaluation time (HH:mm:ss): 0:00:06.153050
+Classifier build time (HH:mm:ss): 0:00:00.728225
+Evaluation time (HH:mm:ss): 0:00:06.230625
 
 Sigmoid Node 0
     Inputs    Weights
-    Threshold    -0.2126228796174346
-    Node 2    2.482908501694604
+    Threshold    -0.21262324197782556
+    Node 2    2.4829092240834894
 Sigmoid Node 1
     Inputs    Weights
-    Threshold    0.2126228796174355
-    Node 2    -2.482908501694605
+    Threshold    0.21262324197782415
+    Node 2    -2.482909224083487
 Sigmoid Node 2
     Inputs    Weights
-    Threshold    1.2836737080331013
-    Attrib source_referral=0    -0.31335149806656154
-    Attrib source_referral=1    -0.0197801035737656
-    Attrib source_referral=2    0.8378690608913872
-    Attrib source_referral=3    -4.367898356411254
-    Attrib source_referral=4    -0.042610265468178435
-    Attrib triage_category=1    1.1558360883499614
-    Attrib triage_category=2    0.38728527003497537
-    Attrib triage_category=3    0.38066915583908006
-    Attrib triage_category=4    -1.1922195872905426
-    Attrib triage_category=5    -4.6059468273569095
+    Threshold    1.2835945528642558
+    Attrib source_referral=self/family/friends    -0.3132863978931049
+    Attrib source_referral=community_org    -4.367649689713373
+    Attrib source_referral=other    -0.04254487253886226
+    Attrib source_referral=clinic    -0.01971287344599068
+    Attrib source_referral=hospital    0.8376601364697576
+    Attrib triage_category=1    1.1557699460900757
+    Attrib triage_category=2    0.3873140291277025
+    Attrib triage_category=3    0.38069944481318546
+    Attrib triage_category=4    -1.192187142231379
+    Attrib triage_category=5    -4.605734712716063
 Class 0
     Input
     Node 0

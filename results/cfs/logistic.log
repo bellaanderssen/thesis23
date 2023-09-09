@@ -1,40 +1,40 @@
 Classifier: weka.classifiers.functions.Logistic
 Options: default
-Classifier build time (HH:mm:ss): 0:00:00.276277
-Evaluation time (HH:mm:ss): 0:00:01.815806
+Classifier build time (HH:mm:ss): 0:00:00.313553
+Evaluation time (HH:mm:ss): 0:00:01.692125
 
 Logistic Regression with ridge parameter of 1.0E-8
 Coefficients...
-                       Class
-Variable                   0
-============================
-source_referral=0     0.1036
-source_referral=1     0.3406
-source_referral=2      0.068
-source_referral=3    -1.5489
-source_referral=4    -0.0837
-triage_category=1     0.7777
-triage_category=2     0.2036
-triage_category=3     0.1278
-triage_category=4      0.105
-triage_category=5    -0.7698
-Intercept             2.0728
+                                         Class
+Variable                                     0
+==============================================
+source_referral=self/family/friends     0.1036
+source_referral=community_org          -1.5489
+source_referral=other                  -0.0837
+source_referral=clinic                  0.3406
+source_referral=hospital                 0.068
+triage_category=1                       0.7777
+triage_category=2                       0.2036
+triage_category=3                       0.1278
+triage_category=4                        0.105
+triage_category=5                      -0.7698
+Intercept                               2.0728
 
 
 Odds Ratios...
-                       Class
-Variable                   0
-============================
-source_referral=0     1.1092
-source_referral=1     1.4058
-source_referral=2     1.0704
-source_referral=3     0.2125
-source_referral=4     0.9197
-triage_category=1     2.1766
-triage_category=2     1.2257
-triage_category=3     1.1363
-triage_category=4     1.1107
-triage_category=5     0.4631
+                                         Class
+Variable                                     0
+==============================================
+source_referral=self/family/friends     1.1092
+source_referral=community_org           0.2125
+source_referral=other                   0.9197
+source_referral=clinic                  1.4058
+source_referral=hospital                1.0704
+triage_category=1                       2.1766
+triage_category=2                       1.2257
+triage_category=3                       1.1363
+triage_category=4                       1.1107
+triage_category=5                       0.4631
 
 
 

@@ -1,7 +1,7 @@
 Classifier: weka.classifiers.rules.ZeroR
 Options: default
-Classifier build time (HH:mm:ss): 0:00:00.007295
-Evaluation time (HH:mm:ss): 0:00:00.064937
+Classifier build time (HH:mm:ss): 0:00:00.012450
+Evaluation time (HH:mm:ss): 0:00:00.085852
 
 ZeroR predicts class value: 0
 
