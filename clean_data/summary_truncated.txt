@@ -1,0 +1,135 @@
+repres7days      0     1    All
+age                            
+0-5           4951   489   5440
+16-25         5480   809   6289
+26-45         8601  1180   9781
+46-65         7196   838   8034
+6-15          3841   383   4224
+66-85         5637   649   6286
+86+            981    91   1072
+All          36687  4439  41126 
+
+repres7days      0     1    All
+sex                            
+F            18181  2216  20397
+M            18506  2222  20728
+other            0     1      1
+All          36687  4439  41126 
+
+repres7days              0     1    All
+source_referral                        
+clinic                2534   229   2763
+community_org          484   345    829
+hospital               241    25    266
+other                  544    78    622
+self/family/friends  32884  3762  36646
+All                  36687  4439  41126 
+
+repres7days             0     1    All
+departure_referral                    
+ED_review            1220   224   1444
+no_referral          2263   272   2535
+specialist          31966  3732  35698
+unknown              1238   211   1449
+All                 36687  4439  41126 
+
+repres7days             0     1    All
+preferred_language                    
+asian                1206   129   1335
+english             32710  4026  36736
+european             1459   139   1598
+middle eastern        763    88    851
+none                  122    10    132
+other                 427    47    474
+All                 36687  4439  41126 
+
+repres7days          0     1    All
+arrival_mode                       
+ambulance         6889   723   7612
+other             1683   228   1911
+private_vehicle  28115  3488  31603
+All              36687  4439  41126 
+
+repres7days              0     1    All
+separation_mode                        
+admitted              9649  1185  10834
+died/other               7     1      8
+left_against_advice   1532   203   1735
+released             25499  3050  28549
+All                  36687  4439  41126 
+
+repres7days          0     1    All
+triage_category                    
+1                  190    11    201
+2                 4737   455   5192
+3                12371  1266  13637
+4                15586  1657  17243
+5                 3803  1050   4853
+All              36687  4439  41126 
+
+repres7days      0     1    All
+icu_status                     
+False        36463  4407  40870
+True           224    32    256
+All          36687  4439  41126 
+
+repres7days         0     1    All
+diagnosis_code                    
+1                4787   642   5429
+2                3235   316   3551
+3                 456    59    515
+4                1832   227   2059
+5                8266   727   8993
+6                2995   294   3289
+9                3005   289   3294
+10               1982   214   2196
+11               1226   281   1507
+12                459    71    530
+13               2649   291   2940
+14                987   311   1298
+15               1306   168   1474
+18                810   131    941
+19               1810   270   2080
+20                177    30    207
+21                466    70    536
+22                  6     2      8
+24                 47    12     59
+25                 39     7     46
+26                  3     0      3
+33                 68    15     83
+99                 76    12     88
+All             36687  4439  41126 
+
+repres7days      0     1    All
+level                          
+0              977   153   1130
+1              246    54    300
+2             2132   363   2495
+3             8178  1045   9223
+4             6065   616   6681
+5             9256  1128  10384
+6             9833  1080  10913
+All          36687  4439  41126 
+
+repres7days      0     1    All
+EDLOS                          
+0-4             45    27     72
+13-24          801   176    977
+25+          35470  4158  39628
+5-12           371    78    449
+All          36687  4439  41126 
+
+repres7days      0     1    All
+remoteness                     
+1            24394  2519  26913
+2             2335   383   2718
+3             9715  1496  11211
+4              183    38    221
+5               60     3     63
+All          36687  4439  41126 
+
+repres7days       0     1    All
+death_status                    
+False         36687  4439  41126
+All           36687  4439  41126 
+

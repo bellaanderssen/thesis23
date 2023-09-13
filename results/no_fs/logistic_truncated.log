@@ -1,0 +1,207 @@
+Classifier: weka.classifiers.functions.Logistic
+Options: default
+Classifier build time (HH:mm:ss): 0:00:05.717672
+Evaluation time (HH:mm:ss): 0:00:49.559955
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                                      Class
+Variable                                                  0
+===========================================================
+age=46-65                                            0.0536
+age=0-5                                              0.0592
+age=16-25                                           -0.1452
+age=66-85                                            0.0363
+age=26-45                                           -0.0975
+age=6-15                                             0.1298
+age=86+                                              0.1812
+sex=F                                                0.0387
+sex=M                                                0.0336
+sex=other                                         -743.0231
+source_referral=self/family/friends                  0.1024
+source_referral=community_org                       -1.4841
+source_referral=other                               -0.0678
+source_referral=clinic                               0.3264
+source_referral=hospital                            -0.0125
+departure_referral=specialist                        0.0647
+departure_referral=unknown                          -0.1652
+departure_referral=no_referral                       0.1179
+departure_referral=ED_review                        -0.2545
+preferred_language=english                          -0.0064
+preferred_language=asian                            -0.0137
+preferred_language=middle eastern                   -0.1877
+preferred_language=european                          0.0884
+preferred_language=other                             0.0326
+preferred_language=none                               0.367
+arrival_mode=private_vehicle                        -0.0507
+arrival_mode=ambulance                               0.0345
+arrival_mode=other                                    0.086
+separation_mode=admitted                            -0.1357
+separation_mode=released                             0.0904
+separation_mode=left_against_advice                  0.1706
+separation_mode=died/other                           1.2619
+triage_category=1                                    0.9431
+triage_category=2                                    0.2643
+triage_category=3                                    0.1829
+triage_category=4                                    0.0362
+triage_category=5                                   -0.7984
+icu_status=True                                     -0.4149
+diagnosis_code=1                                    -0.2437
+diagnosis_code=2                                    -0.0415
+diagnosis_code=3                                    -0.0353
+diagnosis_code=4                                    -0.0683
+diagnosis_code=5                                     0.3875
+diagnosis_code=6                                     0.0177
+diagnosis_code=9                                     0.2503
+diagnosis_code=10                                   -0.0934
+diagnosis_code=11                                   -0.6553
+diagnosis_code=12                                   -0.3004
+diagnosis_code=13                                    0.1774
+diagnosis_code=14                                   -0.4524
+diagnosis_code=15                                   -0.2007
+diagnosis_code=18                                   -0.3407
+diagnosis_code=19                                   -0.1369
+diagnosis_code=20                                   -0.2621
+diagnosis_code=21                                   -0.2089
+diagnosis_code=22                                   -1.4613
+diagnosis_code=24                                   -0.6262
+diagnosis_code=25                                    0.4016
+diagnosis_code=26                                  114.6827
+diagnosis_code=33                                   -0.1339
+diagnosis_code=99                                    0.1975
+level=0                                             -0.0293
+level=1                                             -0.0347
+level=2                                             -0.0414
+level=3                                              0.0059
+level=4                                              0.1519
+level=5                                             -0.0045
+level=6                                             -0.0895
+EDLOS=25+                                            0.0347
+EDLOS=5-12                                           0.1535
+EDLOS=13-24                                         -0.0569
+EDLOS=0-4                                           -0.8895
+remoteness=1                                         0.1756
+remoteness=2                                        -0.1681
+remoteness=3                                        -0.1526
+remoteness=4                                        -0.2469
+remoteness=5                                         1.4728
+Intercept                                            1.9568
+
+
+Odds Ratios...
+                                                      Class
+Variable                                                  0
+===========================================================
+age=46-65                                            1.0551
+age=0-5                                               1.061
+age=16-25                                            0.8648
+age=66-85                                            1.0369
+age=26-45                                            0.9071
+age=6-15                                             1.1386
+age=86+                                              1.1986
+sex=F                                                1.0395
+sex=M                                                1.0341
+sex=other                                                 0
+source_referral=self/family/friends                  1.1079
+source_referral=community_org                        0.2267
+source_referral=other                                0.9345
+source_referral=clinic                                1.386
+source_referral=hospital                             0.9876
+departure_referral=specialist                        1.0669
+departure_referral=unknown                           0.8478
+departure_referral=no_referral                       1.1251
+departure_referral=ED_review                         0.7753
+preferred_language=english                           0.9936
+preferred_language=asian                             0.9864
+preferred_language=middle eastern                    0.8288
+preferred_language=european                          1.0924
+preferred_language=other                             1.0331
+preferred_language=none                              1.4433
+arrival_mode=private_vehicle                         0.9506
+arrival_mode=ambulance                               1.0351
+arrival_mode=other                                   1.0898
+separation_mode=admitted                             0.8731
+separation_mode=released                             1.0946
+separation_mode=left_against_advice                   1.186
+separation_mode=died/other                            3.532
+triage_category=1                                    2.5679
+triage_category=2                                    1.3025
+triage_category=3                                    1.2007
+triage_category=4                                    1.0368
+triage_category=5                                    0.4501
+icu_status=True                                      0.6604
+diagnosis_code=1                                     0.7837
+diagnosis_code=2                                     0.9594
+diagnosis_code=3                                     0.9653
+diagnosis_code=4                                      0.934
+diagnosis_code=5                                     1.4733
+diagnosis_code=6                                     1.0179
+diagnosis_code=9                                     1.2844
+diagnosis_code=10                                    0.9108
+diagnosis_code=11                                    0.5193
+diagnosis_code=12                                    0.7405
+diagnosis_code=13                                    1.1941
+diagnosis_code=14                                    0.6361
+diagnosis_code=15                                    0.8181
+diagnosis_code=18                                    0.7113
+diagnosis_code=19                                     0.872
+diagnosis_code=20                                    0.7694
+diagnosis_code=21                                    0.8115
+diagnosis_code=22                                    0.2319
+diagnosis_code=24                                    0.5346
+diagnosis_code=25                                    1.4941
+diagnosis_code=26                      6.398188453936443E49
+diagnosis_code=33                                    0.8746
+diagnosis_code=99                                    1.2183
+level=0                                              0.9711
+level=1                                              0.9659
+level=2                                              0.9594
+level=3                                              1.0059
+level=4                                               1.164
+level=5                                              0.9955
+level=6                                              0.9144
+EDLOS=25+                                            1.0353
+EDLOS=5-12                                           1.1659
+EDLOS=13-24                                          0.9447
+EDLOS=0-4                                            0.4109
+remoteness=1                                         1.1919
+remoteness=2                                         0.8453
+remoteness=3                                         0.8585
+remoteness=4                                         0.7812
+remoteness=5                                         4.3615
+
+
+
+Correctly Classified Instances       36708               89.2574 %
+Incorrectly Classified Instances      4418               10.7426 %
+Kappa statistic                          0.0454
+Mean absolute error                      0.1834
+Root mean squared error                  0.3034
+Relative absolute error                 95.229  %
+Root relative squared error             97.7652 %
+Total Number of Instances            41126     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.997    0.970    0.895      0.997    0.943      0.108    0.654     0.933     0
+                 0.030    0.003    0.544      0.030    0.056      0.108    0.654     0.217     1
+Weighted Avg.    0.893    0.866    0.857      0.893    0.847      0.108    0.654     0.856     
+
+[[36577.   110.]
+ [ 4308.   131.]]
+
+Class 0 details
+Area under ROC: 0.6537235441897803
+False negatives: 110.0
+True negatives: 131.0
+False positives: 4308.0
+True positives: 36577.0
+
+Class 1 details
+Area under ROC: 0.6537235441897803
+False negatives: 4308.0
+True negatives: 36577.0
+False positives: 110.0
+True positives: 131.0
+

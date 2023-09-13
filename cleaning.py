@@ -3,9 +3,9 @@ import numpy as np
 from contextlib import redirect_stdout
 
 # For local machine
-SPECIFIC_OUTPUT_DIR = "/home/bellaando/thesis23/clean_data/"
-DATA_SOURCE = "/home/bellaando/thesis23/local.csv"
-SUFFIX = "_local"
+# SPECIFIC_OUTPUT_DIR = "/home/bellaando/thesis23/clean_data/"
+# DATA_SOURCE = "/home/bellaando/thesis23/local.csv"
+# SUFFIX = "_local"
 
 # For ARTEMIS truncated
 # SPECIFIC_OUTPUT_DIR = "/project/RDS-FEI-START2-RW/clean_data/"
@@ -13,9 +13,9 @@ SUFFIX = "_local"
 # SUFFIX = "_truncated"
 
 # For ARTEMIS big one
-# SPECIFIC_OUTPUT_DIR = "/project/RDS-FEI-START2-RW/clean_data/"
-# DATA_SOURCE = "/scratch/RDS-FEI-START2-RW/bellanew.csv"
-# SUFFIX = "_full"
+SPECIFIC_OUTPUT_DIR = "/project/RDS-FEI-START2-RW/clean_data/"
+DATA_SOURCE = "/scratch/RDS-FEI-START2-RW/bellanew.csv"
+SUFFIX = "_full"
 
 TARGET_VAR = 'repres7days'
 SELECTED_COLUMNS = ['age_recode',
@@ -55,6 +55,34 @@ NEW_COLUMNS = ['age',
                 # 'presenting_problem',
                 TARGET_VAR,
 
+]
+
+ALL_COLUMNS = ['PPN',
+                'referred_to_on_departure_recode',
+                'age_recode',
+                'arrival_date',
+                'arrival_time',
+                'actual_departure_date',
+                'actual_departure_time',
+                'PREFERRED_LANGUAGE_ASCL',
+                'ED_DIAGNOSIS_CODE',
+                'SEX',
+                'ED_DIAGNOSIS_CODE_SCT',
+                'ED_SOURCE_OF_REFERRAL',
+                'MODE_OF_ARRIVAL',
+                'MODE_OF_SEPARATION', 
+                'TRIAGE_CATEGORY',
+                'DIAGNOSIS_CODE_P',
+                'HOURS_IN_ICU',
+                'DEATH_DATE',
+                'level',
+                'EDLOS',
+                'repres7days',
+                'repres30days',
+                'remoteness',
+                'PRESENTING_PROBLEM',
+                'Project_recnum',
+                'Indigenous_status'
 ]
 
 def count_rows_containing_nan(df):
@@ -171,9 +199,15 @@ def output_analytics(df):
             df[col], df[TARGET_VAR], dropna=False, margins=True)
         print(tab, '\n')
 
-df = pd.read_csv(DATA_SOURCE, encoding='unicode_escape')
+df = pd.read_csv(DATA_SOURCE, encoding='unicode_escape', names = ALL_COLUMNS)
+
+print('Original Dataset:')
+print(df.head())
+
 df = df[SELECTED_COLUMNS]
-# print(f"Selected columns: {', '.join(SELECTED_COLUMNS)}")
+
+print('Selected Columns:')
+print(df.head())
 
 # Ensure there are no NULL rows in the data
 df = df.dropna(how = 'all')
@@ -185,7 +219,9 @@ df[numeric_cols] = df[numeric_cols].apply(pd.to_numeric)
 
 # rename columns
 df.columns = NEW_COLUMNS
-# print(df.head())
+
+print("Renamed Columns:")
+print(df.head())
 
 # Transform variables into buckets
 df['age'] = df['age'].apply(age_to_nominal)
@@ -213,7 +249,8 @@ df['remoteness'] = df['remoteness'].astype(int)
 # get rid of corner cases; if patient died OR they had no diagnosis
 df = df[(df.death_status != "True") & (df.diagnosis_code != 0)]
 
-# print(df.head())
+print("Fully Cleaned Dataset:")
+print(df.head())
 
 # export new clean data to csv
 df.to_csv(SPECIFIC_OUTPUT_DIR + 'no_FS' + SUFFIX + '.csv', index=False)

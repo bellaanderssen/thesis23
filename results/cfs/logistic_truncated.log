@@ -1,0 +1,73 @@
+Classifier: weka.classifiers.functions.Logistic
+Options: default
+Classifier build time (HH:mm:ss): 0:00:01.153364
+Evaluation time (HH:mm:ss): 0:00:06.103878
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                         Class
+Variable                                     0
+==============================================
+source_referral=self/family/friends     0.1036
+source_referral=community_org          -1.5489
+source_referral=other                  -0.0837
+source_referral=clinic                  0.3406
+source_referral=hospital                 0.068
+triage_category=1                       0.7777
+triage_category=2                       0.2036
+triage_category=3                       0.1278
+triage_category=4                        0.105
+triage_category=5                      -0.7698
+Intercept                               2.0728
+
+
+Odds Ratios...
+                                         Class
+Variable                                     0
+==============================================
+source_referral=self/family/friends     1.1092
+source_referral=community_org           0.2125
+source_referral=other                   0.9197
+source_referral=clinic                  1.4058
+source_referral=hospital                1.0704
+triage_category=1                       2.1766
+triage_category=2                       1.2257
+triage_category=3                       1.1363
+triage_category=4                       1.1107
+triage_category=5                       0.4631
+
+
+
+Correctly Classified Instances       36775               89.4203 %
+Incorrectly Classified Instances      4351               10.5797 %
+Kappa statistic                          0.0663
+Mean absolute error                      0.1858
+Root mean squared error                  0.3047
+Relative absolute error                 96.4935 %
+Root relative squared error             98.2079 %
+Total Number of Instances            41126     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.997    0.958    0.896      0.997    0.944      0.147    0.584     0.912     0
+                 0.042    0.003    0.656      0.042    0.078      0.147    0.584     0.186     1
+Weighted Avg.    0.894    0.855    0.870      0.894    0.850      0.147    0.584     0.833     
+
+[[36590.    97.]
+ [ 4254.   185.]]
+
+Class 0 details
+Area under ROC: 0.5843497324618439
+False negatives: 97.0
+True negatives: 185.0
+False positives: 4254.0
+True positives: 36590.0
+
+Class 1 details
+Area under ROC: 0.5843497324618439
+False negatives: 4254.0
+True negatives: 36590.0
+False positives: 97.0
+True positives: 185.0
+

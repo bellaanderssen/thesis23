@@ -1,0 +1,58 @@
+Classifier: weka.classifiers.trees.J48
+Options: -C 0.25
+Classifier build time (HH:mm:ss): 0:00:00.099262
+Evaluation time (HH:mm:ss): 0:00:00.284671
+
+J48 pruned tree
+------------------
+
+source_referral = self/family/friends: 0 (36646.0/3762.0)
+source_referral = community_org
+|   triage_category = 1: 0 (6.0)
+|   triage_category = 2: 0 (81.0/11.0)
+|   triage_category = 3: 0 (173.0/30.0)
+|   triage_category = 4: 0 (287.0/119.0)
+|   triage_category = 5: 1 (282.0/97.0)
+source_referral = other: 0 (622.0/78.0)
+source_referral = clinic: 0 (2763.0/229.0)
+source_referral = hospital: 0 (266.0/25.0)
+
+Number of Leaves  : 	9
+
+Size of the tree : 	11
+
+
+
+Correctly Classified Instances       36775               89.4203 %
+Incorrectly Classified Instances      4351               10.5797 %
+Kappa statistic                          0.0663
+Mean absolute error                      0.187 
+Root mean squared error                  0.3058
+Relative absolute error                 97.0989 %
+Root relative squared error             98.5554 %
+Total Number of Instances            41126     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.997    0.958    0.896      0.997    0.944      0.147    0.536     0.900     0
+                 0.042    0.003    0.656      0.042    0.078      0.147    0.536     0.157     1
+Weighted Avg.    0.894    0.855    0.870      0.894    0.850      0.147    0.536     0.820     
+
+[[36590.    97.]
+ [ 4254.   185.]]
+
+Class 0 details
+Area under ROC: 0.5358495437064137
+False negatives: 97.0
+True negatives: 185.0
+False positives: 4254.0
+True positives: 36590.0
+
+Class 1 details
+Area under ROC: 0.5358495437064137
+False negatives: 4254.0
+True negatives: 36590.0
+False positives: 97.0
+True positives: 185.0
+

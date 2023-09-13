@@ -1,0 +1,99 @@
+Classifier: weka.classifiers.functions.MultilayerPerceptron
+Options: -H 1 -N 10
+Classifier build time (HH:mm:ss): 0:00:00.802934
+Evaluation time (HH:mm:ss): 0:00:05.330587
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    1.1708344870711112
+    Node 2    1.2376458327058637
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -1.170834487071112
+    Node 2    -1.2376458327058637
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    0.0829502095561546
+    Attrib age=46-65    0.16641162351210392
+    Attrib age=0-5    0.6142381055904288
+    Attrib age=16-25    -0.9949405994523036
+    Attrib age=66-85    0.04340195473876686
+    Attrib age=26-45    -1.800864175609305
+    Attrib age=6-15    1.0969713184824137
+    Attrib age=86+    0.36217108337297205
+    Attrib icu_status=True    0.17606194023942603
+    Attrib triage_category=1    1.7269917512680084
+    Attrib triage_category=2    1.52446016861784
+    Attrib triage_category=3    1.0744180959103962
+    Attrib triage_category=4    0.4390356947310669
+    Attrib triage_category=5    -5.014466988502441
+    Attrib diagnosis_code=1    0.7225180420075299
+    Attrib diagnosis_code=2    -0.4272716087516695
+    Attrib diagnosis_code=3    0.3422042564226054
+    Attrib diagnosis_code=4    -0.16339434694086657
+    Attrib diagnosis_code=5    1.646760827278592
+    Attrib diagnosis_code=6    0.6311714584729872
+    Attrib diagnosis_code=9    3.307103490363485
+    Attrib diagnosis_code=10    0.7996383445652595
+    Attrib diagnosis_code=11    -2.8061766678665068
+    Attrib diagnosis_code=12    -0.31674042965806937
+    Attrib diagnosis_code=13    2.3371083691057257
+    Attrib diagnosis_code=14    -2.9068914483198376
+    Attrib diagnosis_code=15    0.19944896098987855
+    Attrib diagnosis_code=18    -0.27674605703443284
+    Attrib diagnosis_code=19    -0.18181276337017305
+    Attrib diagnosis_code=20    -1.1928534482834114
+    Attrib diagnosis_code=21    -0.8802429060550928
+    Attrib diagnosis_code=22    -0.2717969915774842
+    Attrib diagnosis_code=24    -1.420690090434891
+    Attrib diagnosis_code=25    -0.7513824275534043
+    Attrib diagnosis_code=26    -0.11752435061928262
+    Attrib diagnosis_code=33    -0.25390915583412765
+    Attrib diagnosis_code=99    -0.004075952769933678
+    Attrib remoteness=1    0.7298131390528814
+    Attrib remoteness=2    -2.705062021702261E-4
+    Attrib remoteness=3    -1.1153640963639828
+    Attrib remoteness=4    -0.2275955225429048
+    Attrib remoteness=5    0.4579483756295627
+Class 0
+    Input
+    Node 0
+Class 1
+    Input
+    Node 1
+
+
+
+Correctly Classified Instances       36687               89.2063 %
+Incorrectly Classified Instances      4439               10.7937 %
+Kappa statistic                          0     
+Mean absolute error                      0.1821
+Root mean squared error                  0.3072
+Relative absolute error                 94.5767 %
+Root relative squared error             99.0124 %
+Total Number of Instances            41126     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.892      1.000    0.943      ?        0.602     0.917     0
+                 0.000    0.000    ?          0.000    ?          ?        0.602     0.165     1
+Weighted Avg.    0.892    0.892    ?          0.892    ?          ?        0.602     0.836     
+
+[[36687.     0.]
+ [ 4439.     0.]]
+
+Class 0 details
+Area under ROC: 0.6019772710817624
+False negatives: 0.0
+True negatives: 0.0
+False positives: 4439.0
+True positives: 36687.0
+
+Class 1 details
+Area under ROC: 0.6019772710817624
+False negatives: 4439.0
+True negatives: 36687.0
+False positives: 0.0
+True positives: 0.0
+

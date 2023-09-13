@@ -1,0 +1,104 @@
+Classifier: weka.classifiers.bayes.NaiveBayes
+Options: default
+Classifier build time (HH:mm:ss): 0:00:00.024805
+Evaluation time (HH:mm:ss): 0:00:00.312420
+
+Naive Bayes Classifier
+
+                    Class
+Attribute               0       1
+                   (0.89)  (0.11)
+==================================
+age
+  46-65             7197.0   839.0
+  0-5               4952.0   490.0
+  16-25             5481.0   810.0
+  66-85             5638.0   650.0
+  26-45             8602.0  1181.0
+  6-15              3842.0   384.0
+  86+                982.0    92.0
+  [total]          36694.0  4446.0
+
+icu_status
+  False            36464.0  4408.0
+  True               225.0    33.0
+  [total]          36689.0  4441.0
+
+triage_category
+  1                  191.0    12.0
+  2                 4738.0   456.0
+  3                12372.0  1267.0
+  4                15587.0  1658.0
+  5                 3804.0  1051.0
+  [total]          36692.0  4444.0
+
+diagnosis_code
+  1                 4788.0   643.0
+  2                 3236.0   317.0
+  3                  457.0    60.0
+  4                 1833.0   228.0
+  5                 8267.0   728.0
+  6                 2996.0   295.0
+  9                 3006.0   290.0
+  10                1983.0   215.0
+  11                1227.0   282.0
+  12                 460.0    72.0
+  13                2650.0   292.0
+  14                 988.0   312.0
+  15                1307.0   169.0
+  18                 811.0   132.0
+  19                1811.0   271.0
+  20                 178.0    31.0
+  21                 467.0    71.0
+  22                   7.0     3.0
+  24                  48.0    13.0
+  25                  40.0     8.0
+  26                   4.0     1.0
+  33                  69.0    16.0
+  99                  77.0    13.0
+  [total]          36710.0  4462.0
+
+remoteness
+  1                24395.0  2520.0
+  2                 2336.0   384.0
+  3                 9716.0  1497.0
+  4                  184.0    39.0
+  5                   61.0     4.0
+  [total]          36692.0  4444.0
+
+
+
+
+Correctly Classified Instances       36646               89.1066 %
+Incorrectly Classified Instances      4480               10.8934 %
+Kappa statistic                          0.016 
+Mean absolute error                      0.1872
+Root mean squared error                  0.307 
+Relative absolute error                 97.2005 %
+Root relative squared error             98.9517 %
+Total Number of Instances            41126     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.997    0.988    0.893      0.997    0.942      0.048    0.634     0.927     0
+                 0.012    0.003    0.359      0.012    0.023      0.048    0.634     0.181     1
+Weighted Avg.    0.891    0.882    0.835      0.891    0.843      0.048    0.634     0.846     
+
+[[36594.    93.]
+ [ 4387.    52.]]
+
+Class 0 details
+Area under ROC: 0.6335743080596324
+False negatives: 93.0
+True negatives: 52.0
+False positives: 4387.0
+True positives: 36594.0
+
+Class 1 details
+Area under ROC: 0.6335743080596324
+False negatives: 4387.0
+True negatives: 36594.0
+False positives: 93.0
+True positives: 52.0
+

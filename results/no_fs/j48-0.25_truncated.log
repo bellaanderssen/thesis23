@@ -1,0 +1,124 @@
+Classifier: weka.classifiers.trees.J48
+Options: -C 0.25
+Classifier build time (HH:mm:ss): 0:00:00.466966
+Evaluation time (HH:mm:ss): 0:00:02.510515
+
+J48 pruned tree
+------------------
+
+source_referral = self/family/friends: 0 (36646.0/3762.0)
+source_referral = community_org
+|   arrival_mode = private_vehicle
+|   |   triage_category = 1: 1 (0.0)
+|   |   triage_category = 2
+|   |   |   remoteness = 1
+|   |   |   |   sex = F: 0 (7.0/1.0)
+|   |   |   |   sex = M: 1 (7.0/2.0)
+|   |   |   |   sex = other: 0 (0.0)
+|   |   |   remoteness = 2: 0 (0.0)
+|   |   |   remoteness = 3: 0 (4.0)
+|   |   |   remoteness = 4: 0 (0.0)
+|   |   |   remoteness = 5: 0 (1.0)
+|   |   triage_category = 3: 0 (68.0/20.0)
+|   |   triage_category = 4
+|   |   |   remoteness = 1
+|   |   |   |   level = 0: 1 (0.0)
+|   |   |   |   level = 1: 0 (1.0)
+|   |   |   |   level = 2: 0 (2.0/1.0)
+|   |   |   |   level = 3
+|   |   |   |   |   diagnosis_code = 1: 0 (2.0)
+|   |   |   |   |   diagnosis_code = 2: 0 (1.0)
+|   |   |   |   |   diagnosis_code = 3: 1 (0.0)
+|   |   |   |   |   diagnosis_code = 4: 1 (0.0)
+|   |   |   |   |   diagnosis_code = 5: 1 (4.0)
+|   |   |   |   |   diagnosis_code = 6: 1 (0.0)
+|   |   |   |   |   diagnosis_code = 9: 1 (0.0)
+|   |   |   |   |   diagnosis_code = 10: 1 (0.0)
+|   |   |   |   |   diagnosis_code = 11: 1 (0.0)
+|   |   |   |   |   diagnosis_code = 12: 1 (0.0)
+|   |   |   |   |   diagnosis_code = 13: 0 (1.0)
+|   |   |   |   |   diagnosis_code = 14: 1 (0.0)
+|   |   |   |   |   diagnosis_code = 15: 1 (0.0)
+|   |   |   |   |   diagnosis_code = 18: 1 (0.0)
+|   |   |   |   |   diagnosis_code = 19: 1 (6.0/1.0)
+|   |   |   |   |   diagnosis_code = 20: 1 (0.0)
+|   |   |   |   |   diagnosis_code = 21: 1 (0.0)
+|   |   |   |   |   diagnosis_code = 22: 1 (0.0)
+|   |   |   |   |   diagnosis_code = 24: 1 (0.0)
+|   |   |   |   |   diagnosis_code = 25: 1 (0.0)
+|   |   |   |   |   diagnosis_code = 26: 1 (0.0)
+|   |   |   |   |   diagnosis_code = 33: 1 (0.0)
+|   |   |   |   |   diagnosis_code = 99: 1 (0.0)
+|   |   |   |   level = 4: 0 (12.0/1.0)
+|   |   |   |   level = 5: 0 (27.0/6.0)
+|   |   |   |   level = 6: 1 (80.0/25.0)
+|   |   |   remoteness = 2: 0 (9.0)
+|   |   |   remoteness = 3
+|   |   |   |   level = 0: 0 (7.0/2.0)
+|   |   |   |   level = 1: 0 (6.0/1.0)
+|   |   |   |   level = 2: 0 (7.0/1.0)
+|   |   |   |   level = 3: 1 (23.0/8.0)
+|   |   |   |   level = 4: 1 (11.0/3.0)
+|   |   |   |   level = 5: 1 (14.0/6.0)
+|   |   |   |   level = 6: 1 (1.0)
+|   |   |   remoteness = 4: 1 (1.0)
+|   |   |   remoteness = 5: 0 (3.0)
+|   |   triage_category = 5: 1 (218.0/60.0)
+|   arrival_mode = ambulance: 0 (152.0/14.0)
+|   arrival_mode = other
+|   |   departure_referral = specialist: 0 (121.0/24.0)
+|   |   departure_referral = unknown: 1 (3.0/1.0)
+|   |   departure_referral = no_referral: 0 (14.0/2.0)
+|   |   departure_referral = ED_review: 1 (16.0/6.0)
+source_referral = other: 0 (622.0/78.0)
+source_referral = clinic: 0 (2763.0/229.0)
+source_referral = hospital
+|   departure_referral = specialist: 0 (260.0/22.0)
+|   departure_referral = unknown
+|   |   remoteness = 1: 0 (2.0)
+|   |   remoteness = 2: 1 (0.0)
+|   |   remoteness = 3: 1 (3.0)
+|   |   remoteness = 4: 1 (0.0)
+|   |   remoteness = 5: 1 (0.0)
+|   departure_referral = no_referral: 0 (1.0)
+|   departure_referral = ED_review: 0 (0.0)
+
+Number of Leaves  : 	65
+
+Size of the tree : 	77
+
+
+
+Correctly Classified Instances       36814               89.5151 %
+Incorrectly Classified Instances      4312               10.4849 %
+Kappa statistic                          0.0911
+Mean absolute error                      0.1861
+Root mean squared error                  0.3054
+Relative absolute error                 96.6169 %
+Root relative squared error             98.4138 %
+Total Number of Instances            41126     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.996    0.942    0.897      0.996    0.944      0.175    0.536     0.899     0
+                 0.058    0.004    0.663      0.058    0.107      0.175    0.536     0.161     1
+Weighted Avg.    0.895    0.841    0.872      0.895    0.854      0.175    0.536     0.820     
+
+[[36556.   131.]
+ [ 4181.   258.]]
+
+Class 0 details
+Area under ROC: 0.5362831356137165
+False negatives: 131.0
+True negatives: 258.0
+False positives: 4181.0
+True positives: 36556.0
+
+Class 1 details
+Area under ROC: 0.5362831356137165
+False negatives: 4181.0
+True negatives: 36556.0
+False positives: 131.0
+True positives: 258.0
+
