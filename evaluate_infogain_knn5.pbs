@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#PBS -P RDS-FEI-START2-RW
+#PBS -M iand8846@uni.sydney.edu.au
+#PBS -m abe
+#PBS -N evaluate_infogain_knn5
+#PBS -q defaultQ
+#PBS -l select=1:ncpus=1:mem=2048GB
+#PBS -l walltime=48:00:00
+
+module load python/3.7.2
+module load java
+module load weka
+
+pip install --user javabridge
+pip install --user python-weka-wrapper3
+
+cd $PBS_O_WORKDIR
+
+# python feature_selection script
+python evaluate.py results/infogain_knn5

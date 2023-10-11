@@ -1,0 +1,46 @@
+-- Job Summary -------------------------------------------------------
+Job Id: 7230815.pbsserver for user iand8846 in queue highmem
+Job Name: FS_2
+Project: RDS-FEI-START2-RW
+Exit Status: 0
+Job run as chunks (hpc203:ncpus=1:mem=1073741824kb)
+Walltime requested:   02:30:00 :      Walltime used:   00:49:09
+                               :   Walltime percent:      32.8%
+-- Nodes Summary -----------------------------------------------------
+-- node hpc203 summary
+    Cpus requested:          1 :          Cpus used:       0.98
+          Cpu Time:   00:48:20 :        Cpu percent:      98.3%
+     Mem requested:      1.0TB :           Mem used:    205.5GB
+                               :        Mem percent:      20.1%
+
+-- WARNINGS ----------------------------------------------------------
+
+** Low Walltime utilisation.  While this may be normal, it may help to check the
+** following:
+**   Did the job parameters specify more walltime than necessary? Requesting
+**   lower walltime could help your job to start sooner.
+**   Did your analysis complete as expected or did it crash before completing?
+**   Did the application run more quickly than it should have? Is this analysis
+**   the one you intended to run?
+** 
+** High CPU utilisation on hpc203.  This is often normal, however you might want
+** to double-check if you need to request more cores or have misconfigured MPI
+** if your jobs ran slower than expected.  It might help to check the following:
+**   Did the job parameters specify enough cores? Requesting more cores could
+**   help your job run faster.
+**   Did you use MPI and was the work distributed correctly? Correcting this
+**   could make your job to run faster without needing any more cores.
+**   Did the application use more cores than it should have? Is this analysis
+**   the one you intended to run?
+**
+** Low Memory utilisation on hpc203. While this may be normal, it may help to check
+** the following:
+**   Did the job parameters specify too much memory? Requesting less RAM could
+**   help your job to start sooner.
+**   Did you use MPI and was the work distributed correctly? Correcting this
+**   could allow your job to run using less RAM in each chunk.
+**   Did your analysis complete as expected or did it crash before completing?
+**   Did the application use less RAM than it should have? Is this analysis the
+**   one you intended to run?
+**
+-- End of Job Summary ------------------------------------------------

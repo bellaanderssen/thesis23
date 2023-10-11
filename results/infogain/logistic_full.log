@@ -1,0 +1,107 @@
+Classifier: weka.classifiers.functions.Logistic
+Options: default
+Classifier build time (HH:mm:ss): 4:53:36.448066
+Evaluation time (HH:mm:ss): 1 day, 14:14:16.164025
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                         Class
+Variable                                     0
+==============================================
+preferred_language=other                0.6348
+preferred_language=english             -1.1538
+preferred_language=european            -0.8255
+preferred_language=asian               -0.8303
+preferred_language=middle eastern      -0.9213
+preferred_language=none                 0.7682
+source_referral=other                    0.385
+source_referral=clinic                  -2.472
+source_referral=self/family/friends    -0.2302
+source_referral=community_org          -0.4069
+source_referral=hospital               -0.5979
+EDLOS=25+                               0.9138
+EDLOS=5-12                             -0.3239
+EDLOS=13-24                             0.1996
+EDLOS=0-4                              -0.9598
+triage_category=1                       0.5151
+triage_category=2                       0.3578
+triage_category=3                       0.2232
+triage_category=4                       0.2066
+triage_category=5                      -0.7644
+age=46-65                               -0.257
+age=0-5                                 0.5701
+age=16-25                              -0.1154
+age=66-85                               0.2153
+age=26-45                              -0.3739
+age=6-15                                0.5106
+age=86+                                 0.5017
+Intercept                              -0.6155
+
+
+Odds Ratios...
+                                         Class
+Variable                                     0
+==============================================
+preferred_language=other                1.8867
+preferred_language=english              0.3154
+preferred_language=european              0.438
+preferred_language=asian                0.4359
+preferred_language=middle eastern        0.398
+preferred_language=none                 2.1558
+source_referral=other                   1.4696
+source_referral=clinic                  0.0844
+source_referral=self/family/friends     0.7944
+source_referral=community_org           0.6657
+source_referral=hospital                  0.55
+EDLOS=25+                               2.4937
+EDLOS=5-12                              0.7233
+EDLOS=13-24                              1.221
+EDLOS=0-4                                0.383
+triage_category=1                       1.6737
+triage_category=2                       1.4301
+triage_category=3                         1.25
+triage_category=4                       1.2294
+triage_category=5                       0.4656
+age=46-65                               0.7733
+age=0-5                                 1.7685
+age=16-25                                0.891
+age=66-85                               1.2402
+age=26-45                               0.6881
+age=6-15                                1.6663
+age=86+                                 1.6515
+
+
+
+Correctly Classified Instances     142444918          80.5976 %
+Incorrectly Classified Instances   34290969          19.4024 %
+Kappa statistic                          0.5724
+Mean absolute error                      0.2883
+Root mean squared error                  0.38  
+Relative absolute error                 60.3111 %
+Root relative squared error             77.7333 %
+Total Number of Instances          176735887
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.935    0.392    0.785      0.935    0.854      0.592    0.829     0.839     0
+                 0.608    0.065    0.859      0.608    0.712      0.592    0.829     0.824     1
+Weighted Avg.    0.806    0.263    0.815      0.806    0.798      0.592    0.829     0.833     
+
+[[99971536.  6946943.]
+ [27344026. 42473382.]]
+
+Class 0 details
+Area under ROC: 0.8286897688287276
+False negatives: 6946943.0
+True negatives: 42473382.0
+False positives: 27344026.0
+True positives: 99971536.0
+
+Class 1 details
+Area under ROC: 0.8286897688287274
+False negatives: 27344026.0
+True negatives: 99971536.0
+False positives: 6946943.0
+True positives: 42473382.0
+

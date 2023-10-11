@@ -1,0 +1,12 @@
+WARNING: You are using pip version 21.0.1; however, version 23.2.1 is available.
+You should consider upgrading via the '/usr/local/python/3.7.2/bin/python3.7 -m pip install --upgrade pip' command.
+WARNING: You are using pip version 21.0.1; however, version 23.2.1 is available.
+You should consider upgrading via the '/usr/local/python/3.7.2/bin/python3.7 -m pip install --upgrade pip' command.
+DEBUG:weka.core.jvm:Adding bundled jars
+DEBUG:weka.core.jvm:Classpath=['/home/iand8846/.local/lib/python3.7/site-packages/javabridge/jars/rhino-1.7R4.jar', '/home/iand8846/.local/lib/python3.7/site-packages/javabridge/jars/runnablequeue.jar', '/home/iand8846/.local/lib/python3.7/site-packages/javabridge/jars/cpython.jar', '/home/iand8846/.local/lib/python3.7/site-packages/weka/lib/core.jar', '/home/iand8846/.local/lib/python3.7/site-packages/weka/lib/mtj.jar', '/home/iand8846/.local/lib/python3.7/site-packages/weka/lib/weka.jar', '/home/iand8846/.local/lib/python3.7/site-packages/weka/lib/arpack_combined.jar', '/home/iand8846/.local/lib/python3.7/site-packages/weka/lib/python-weka-wrapper.jar']
+DEBUG:weka.core.jvm:MaxHeapSize=default
+DEBUG:weka.core.jvm:Package support disabled
+Sep 13, 2023 3:37:55 PM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeSystemARPACK
+Sep 13, 2023 3:37:55 PM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeRefARPACK

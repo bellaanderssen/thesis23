@@ -1,0 +1,78 @@
+Classifier: weka.classifiers.bayes.NaiveBayes
+Options: default
+Classifier build time (HH:mm:ss): 0:00:19.974164
+Evaluation time (HH:mm:ss): 1:02:09.676241
+
+Naive Bayes Classifier
+
+                         Class
+Attribute                    0            1
+                         (0.6)        (0.4)
+============================================
+age
+  46-65             2.3105737E7  1.9801671E7
+  0-5               1.0513365E7    1529222.0
+  16-25             1.6651783E7    6476685.0
+  66-85             1.6196389E7    4211351.0
+  26-45              2.915217E7  3.5829905E7
+  6-15                8250085.0    1460114.0
+  86+                 3048957.0     508467.0
+  [total]          1.06918486E8  6.9817415E7
+
+icu_status
+  False              1.061282E8  6.9638986E7
+  True                 790281.0     178424.0
+  [total]          1.06918481E8   6.981741E7
+
+triage_category
+  1                    658412.0     156447.0
+  2                  1.415858E7    4115667.0
+  3                 3.7434773E7  1.1811424E7
+  4                 4.2027449E7  1.9893123E7
+  5                  1.263927E7  3.3840752E7
+  [total]          1.06918484E8  6.9817413E7
+
+remoteness
+  1                 6.3237826E7  2.2779266E7
+  2                   9719676.0  1.0657186E7
+  3                 3.2614461E7   3.514864E7
+  4                    840187.0     658015.0
+  5                    506334.0     574306.0
+  [total]          1.06918484E8  6.9817413E7
+
+
+
+
+Correctly Classified Instances     130287585          73.7188 %
+Incorrectly Classified Instances   46448302          26.2812 %
+Kappa statistic                          0.4388
+Mean absolute error                      0.3405
+Root mean squared error                  0.4299
+Relative absolute error                 71.2445 %
+Root relative squared error             87.9492 %
+Total Number of Instances          176735887
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.821    0.391    0.763      0.821    0.791      0.441    0.768     0.802     0
+                 0.609    0.179    0.689      0.609    0.647      0.441    0.768     0.714     1
+Weighted Avg.    0.737    0.307    0.734      0.737    0.734      0.441    0.768     0.767     
+
+[[87754934. 19163545.]
+ [27284757. 42532651.]]
+
+Class 0 details
+Area under ROC: 0.7683546282190654
+False negatives: 19163545.0
+True negatives: 42532651.0
+False positives: 27284757.0
+True positives: 87754934.0
+
+Class 1 details
+Area under ROC: 0.7683546282190646
+False negatives: 27284757.0
+True negatives: 87754934.0
+False positives: 19163545.0
+True positives: 42532651.0
+

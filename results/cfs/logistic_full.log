@@ -1,0 +1,83 @@
+Classifier: weka.classifiers.functions.Logistic
+Options: default
+Classifier build time (HH:mm:ss): 2:30:46.191706
+Evaluation time (HH:mm:ss): 1 day, 2:19:06.784080
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                         Class
+Variable                                     0
+==============================================
+source_referral=other                    0.918
+source_referral=clinic                 -1.9011
+source_referral=self/family/friends     0.2524
+source_referral=community_org          -0.0775
+source_referral=hospital               -0.4758
+preferred_language=other                1.1606
+preferred_language=english             -0.8689
+preferred_language=european            -0.2688
+preferred_language=asian               -0.3144
+preferred_language=middle eastern      -0.3916
+preferred_language=none                 1.1127
+EDLOS=25+                               1.0333
+EDLOS=5-12                             -0.8837
+EDLOS=13-24                            -0.2159
+EDLOS=0-4                              -1.6785
+Intercept                              -1.7813
+
+
+Odds Ratios...
+                                         Class
+Variable                                     0
+==============================================
+source_referral=other                   2.5042
+source_referral=clinic                  0.1494
+source_referral=self/family/friends      1.287
+source_referral=community_org           0.9254
+source_referral=hospital                0.6214
+preferred_language=other                3.1918
+preferred_language=english              0.4194
+preferred_language=european             0.7643
+preferred_language=asian                0.7302
+preferred_language=middle eastern        0.676
+preferred_language=none                 3.0427
+EDLOS=25+                               2.8105
+EDLOS=5-12                              0.4132
+EDLOS=13-24                             0.8058
+EDLOS=0-4                               0.1866
+
+
+
+Correctly Classified Instances     141378532          79.9942 %
+Incorrectly Classified Instances   35357355          20.0058 %
+Kappa statistic                          0.5572
+Mean absolute error                      0.3013
+Root mean squared error                  0.3886
+Relative absolute error                 63.0384 %
+Root relative squared error             79.4816 %
+Total Number of Instances          176735887
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.938    0.411    0.777      0.938    0.850      0.580    0.787     0.786     0
+                 0.589    0.062    0.861      0.589    0.699      0.580    0.787     0.790     1
+Weighted Avg.    0.800    0.273    0.810      0.800    0.791      0.580    0.787     0.787     
+
+[[1.00273923e+08 6.64455600e+06]
+ [2.87127990e+07 4.11046090e+07]]
+
+Class 0 details
+Area under ROC: 0.7871877456060064
+False negatives: 6644556.0
+True negatives: 41104609.0
+False positives: 28712799.0
+True positives: 100273923.0
+
+Class 1 details
+Area under ROC: 0.7871877456060061
+False negatives: 28712799.0
+True negatives: 100273923.0
+False positives: 6644556.0
+True positives: 41104609.0
+

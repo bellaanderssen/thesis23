@@ -1,0 +1,26 @@
+-- Job Summary -------------------------------------------------------
+Job Id: 7197950.pbsserver for user iand8846 in queue small
+Job Name: FS_1
+Project: RDS-FEI-START2-RW
+Exit Status: 0
+Job run as chunks (hpc008:ncpus=1:mem=16777216kb)
+Walltime requested:   03:00:00 :      Walltime used:   00:00:25
+                               :   Walltime percent:       0.2%
+-- Nodes Summary -----------------------------------------------------
+-- node hpc008 summary
+    Cpus requested:          1 :          Cpus used:    unknown
+          Cpu Time:    unknown :        Cpu percent:    unknown
+     Mem requested:     16.0GB :           Mem used:    unknown
+                               :        Mem percent:    unknown
+
+-- WARNINGS ----------------------------------------------------------
+
+** Low Walltime utilisation.  While this may be normal, it may help to check the
+** following:
+**   Did the job parameters specify more walltime than necessary? Requesting
+**   lower walltime could help your job to start sooner.
+**   Did your analysis complete as expected or did it crash before completing?
+**   Did the application run more quickly than it should have? Is this analysis
+**   the one you intended to run?
+** 
+-- End of Job Summary ------------------------------------------------

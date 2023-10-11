@@ -1,0 +1,32 @@
+Searcher: 	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 71
+	Merit of best subset found:    0.296
+Seacher options: 
+Evaluator: 	CFS Subset Evaluator
+	Including locally predictive attributes
+Evaluator options: 
+
+Runtime (HH:mm:ss): 0:10:13.289870
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 71
+	Merit of best subset found:    0.296
+
+Attribute Subset Evaluator (supervised, Class (nominal): 14 repres7days):
+	CFS Subset Evaluator
+	Including locally predictive attributes
+
+Selected attributes: 3,5,11 : 3
+                     source_referral
+                     preferred_language
+                     EDLOS

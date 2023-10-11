@@ -7,7 +7,7 @@ from weka.filters import Filter
 
 
 class JVM:
-    def __init__(self, max_heap_size=None):
+    def __init__(self, max_heap_size="-Xmx8g"):
         self._max_heap_size = max_heap_size
 
     def __enter__(self):
