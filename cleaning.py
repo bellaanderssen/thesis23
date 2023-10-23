@@ -223,6 +223,8 @@ df.columns = NEW_COLUMNS
 print("Renamed Columns:")
 print(df.head())
 
+df = df.dropna(how = 'any')
+
 # Transform variables into buckets
 df['age'] = df['age'].apply(age_to_nominal)
 df['sex'] = df['sex'].apply(sex_to_nominal)
