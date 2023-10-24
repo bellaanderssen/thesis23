@@ -31,7 +31,7 @@ ED_review             130992    56452    187444
 no_referral           526773   313639    840412
 specialist          27055972  8109204  35165176
 unknown               186047   146171    332218
-All                 27899784  8625466  36525250 
+All                 27899784  8625466  36525250
 
 repres7days                0        1       All
 preferred_language                             
