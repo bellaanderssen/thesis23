@@ -1,0 +1,125 @@
+Classifier: weka.classifiers.trees.J48
+Options: -C 0.25
+Classifier build time (HH:mm:ss): 0:01:23.989807
+Evaluation time (HH:mm:ss): 1:07:06.110601
+
+J48 pruned tree
+------------------
+
+age = 46-65
+|   triage_category = 1: 0 (160847.0/27008.0)
+|   triage_category = 2: 0 (2804388.0/698321.0)
+|   triage_category = 3: 0 (4334493.0/1072304.0)
+|   triage_category = 4: 0 (2001891.0/599029.0)
+|   triage_category = 5
+|   |   remoteness = 1: 0 (147262.0/69734.0)
+|   |   remoteness = 2: 1 (38140.0/17043.0)
+|   |   remoteness = 3: 0 (84678.0/39513.0)
+|   |   remoteness = 4: 1 (11644.0/4328.0)
+|   |   remoteness = 5: 1 (1224.0/526.0)
+age = 0-5
+|   triage_category = 1: 0 (39663.0/3623.0)
+|   triage_category = 2: 0 (544041.0/66950.0)
+|   triage_category = 3: 0 (1015929.0/190184.0)
+|   triage_category = 4: 0 (370080.0/91596.0)
+|   triage_category = 5
+|   |   remoteness = 1
+|   |   |   icu_status = False: 1 (13324.0/6293.0)
+|   |   |   icu_status = True: 0 (47.0/7.0)
+|   |   remoteness = 2: 0 (2397.0/1064.0)
+|   |   remoteness = 3: 0 (7110.0/2996.0)
+|   |   remoteness = 4: 0 (197.0/72.0)
+|   |   remoteness = 5: 0 (252.0/98.0)
+age = 66-85: 0 (8186094.0/1111497.0)
+age = 16-25
+|   triage_category = 1: 0 (86856.0/23665.0)
+|   triage_category = 2: 0 (998678.0/290380.0)
+|   triage_category = 3: 0 (2120278.0/661990.0)
+|   triage_category = 4: 0 (1083729.0/359480.0)
+|   triage_category = 5
+|   |   icu_status = False
+|   |   |   remoteness = 1: 1 (73783.0/35582.0)
+|   |   |   remoteness = 2: 1 (22693.0/9366.0)
+|   |   |   remoteness = 3: 1 (42819.0/18971.0)
+|   |   |   remoteness = 4: 1 (1327.0/662.0)
+|   |   |   remoteness = 5: 0 (708.0/245.0)
+|   |   icu_status = True
+|   |   |   remoteness = 1: 0 (148.0/24.0)
+|   |   |   remoteness = 2: 1 (76.0/20.0)
+|   |   |   remoteness = 3: 0 (472.0/99.0)
+|   |   |   remoteness = 4: 0 (0.0)
+|   |   |   remoteness = 5: 0 (0.0)
+age = 26-45
+|   triage_category = 1: 0 (167760.0/36346.0)
+|   triage_category = 2
+|   |   icu_status = False: 0 (1954935.0/494811.0)
+|   |   icu_status = True
+|   |   |   remoteness = 1: 0 (75068.0/14875.0)
+|   |   |   remoteness = 2: 0 (5908.0/760.0)
+|   |   |   remoteness = 3: 0 (17451.0/4115.0)
+|   |   |   remoteness = 4: 1 (537.0/183.0)
+|   |   |   remoteness = 5: 0 (537.0/200.0)
+|   triage_category = 3: 0 (4596723.0/1367572.0)
+|   triage_category = 4: 0 (2100814.0/678667.0)
+|   triage_category = 5
+|   |   remoteness = 1: 1 (167070.0/82511.0)
+|   |   remoteness = 2: 1 (31301.0/15590.0)
+|   |   remoteness = 3
+|   |   |   icu_status = False: 1 (102377.0/41948.0)
+|   |   |   icu_status = True: 0 (652.0/171.0)
+|   |   remoteness = 4: 0 (3620.0/1031.0)
+|   |   remoteness = 5: 0 (2288.0/1113.0)
+age = 6-15
+|   triage_category = 1: 0 (22605.0/2673.0)
+|   triage_category = 2: 0 (215226.0/28115.0)
+|   triage_category = 3: 0 (639937.0/125112.0)
+|   triage_category = 4: 0 (298098.0/77638.0)
+|   triage_category = 5
+|   |   remoteness = 1
+|   |   |   icu_status = False: 1 (20275.0/8383.0)
+|   |   |   icu_status = True: 0 (79.0/17.0)
+|   |   remoteness = 2: 0 (3629.0/1420.0)
+|   |   remoteness = 3: 1 (11556.0/5702.0)
+|   |   remoteness = 4: 0 (195.0/33.0)
+|   |   remoteness = 5: 1 (223.0/100.0)
+age = 86+: 0 (1891118.0/189757.0)
+
+Number of Leaves  : 	60
+
+Size of the tree : 	78
+
+
+
+Correctly Classified Instances     27943531          76.5047 %
+Incorrectly Classified Instances   8581719               23.4953 %
+Kappa statistic                          0.0362
+Mean absolute error                      0.3463
+Root mean squared error                  0.4161
+Relative absolute error                 95.983  %
+Root relative squared error             97.971  %
+Total Number of Instances          36525250
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.991    0.967    0.768      0.991    0.866      0.087    0.627     0.837     0
+                 0.033    0.009    0.541      0.033    0.062      0.087    0.627     0.329     1
+Weighted Avg.    0.765    0.741    0.715      0.765    0.676      0.087    0.627     0.717     
+
+[[27657481.   242303.]
+ [ 8339416.   286050.]]
+
+Class 0 details
+Area under ROC: 0.6268005062572057
+False negatives: 242303.0
+True negatives: 286050.0
+False positives: 8339416.0
+True positives: 27657481.0
+
+Class 1 details
+Area under ROC: 0.6268005062572057
+False negatives: 8339416.0
+True negatives: 27657481.0
+False positives: 242303.0
+True positives: 286050.0
+

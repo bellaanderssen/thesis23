@@ -1,0 +1,85 @@
+Classifier: weka.classifiers.functions.MultilayerPerceptron
+Options: -H 1 -N 10
+Classifier build time (HH:mm:ss): 0:08:05.001463
+Evaluation time (HH:mm:ss): 1:22:14.139480
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -0.738528346724258
+    Node 2    1.9974073759617386
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    0.7385283467242596
+    Node 2    -1.9974073759617403
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.7571784583611357
+    Attrib preferred_language=other    7.982482893101344
+    Attrib preferred_language=english    -6.062464099490032
+    Attrib preferred_language=european    -5.681603595137249
+    Attrib preferred_language=asian    -1.1197404965761208
+    Attrib preferred_language=none    9.521844442675322
+    Attrib preferred_language=middle eastern    -1.7957092600635294
+    Attrib source_referral=other    2.179184762795658
+    Attrib source_referral=self/family/friends    -4.1451181029020026
+    Attrib source_referral=clinic    -5.552624495759843
+    Attrib source_referral=community_org    -1.6730254999691592
+    Attrib source_referral=hospital    11.430526215567532
+    Attrib age=46-65    -6.164565868012329
+    Attrib age=0-5    4.398816822693944
+    Attrib age=66-85    6.307654445675184
+    Attrib age=16-25    -8.756619195480283
+    Attrib age=26-45    -7.035429320076744
+    Attrib age=6-15    3.155397108813015
+    Attrib age=86+    12.047022272192962
+    Attrib separation_mode=admitted    5.060253885764219
+    Attrib separation_mode=released    -7.8429172622165515
+    Attrib separation_mode=left_against_advice    -0.7375246487462864
+    Attrib separation_mode=died/other    5.002819003196514
+    Attrib triage_category=1    11.145721324357034
+    Attrib triage_category=2    3.4421747902524875
+    Attrib triage_category=3    1.496196611829689
+    Attrib triage_category=4    0.523998732722749
+    Attrib triage_category=5    -14.330287654617663
+Class 0
+    Input
+    Node 0
+Class 1
+    Input
+    Node 1
+
+
+
+Correctly Classified Instances     28623120          78.3653 %
+Incorrectly Classified Instances   7902130               21.6347 %
+Kappa statistic                          0.2732
+Mean absolute error                      0.3224
+Root mean squared error                  0.4057
+Relative absolute error                 89.3732 %
+Root relative squared error             95.5334 %
+Total Number of Instances          36525250
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.937    0.711    0.810      0.937    0.869      0.298    0.628     0.820     0
+                 0.289    0.063    0.585      0.289    0.387      0.298    0.628     0.398     1
+Weighted Avg.    0.784    0.558    0.757      0.784    0.755      0.298    0.628     0.720     
+
+[[26131789.  1767995.]
+ [ 6134135.  2491331.]]
+
+Class 0 details
+Area under ROC: 0.6277430139912651
+False negatives: 1767995.0
+True negatives: 2491331.0
+False positives: 6134135.0
+True positives: 26131789.0
+
+Class 1 details
+Area under ROC: 0.6277519127832056
+False negatives: 6134135.0
+True negatives: 26131789.0
+False positives: 1767995.0
+True positives: 2491331.0
+

@@ -1,0 +1,64 @@
+Classifier: weka.classifiers.bayes.NaiveBayes
+Options: default
+Classifier build time (HH:mm:ss): 0:00:03.500884
+Evaluation time (HH:mm:ss): 0:10:08.685869
+
+Naive Bayes Classifier
+
+                           Class
+Attribute                      0           1
+                          (0.76)      (0.24)
+=============================================
+preferred_language
+  other                2.676308E7   6784493.0
+  english               1032298.0   1695977.0
+  european                77660.0    119646.0
+  asian                   13033.0     12782.0
+  none                      454.0       175.0
+  middle eastern          13265.0     12399.0
+  [total]              2.789979E7   8625472.0
+
+triage_category
+  1                      495118.0    103132.0
+  2                     7409318.0   1864971.0
+  3                   1.3547684E7   4005131.0
+  4                     5924074.0   2176867.0
+  5                      523595.0    475370.0
+  [total]             2.7899789E7   8625471.0
+
+
+
+
+Correctly Classified Instances     28606593          78.32   %
+Incorrectly Classified Instances   7918657               21.68   %
+Kappa statistic                          0.2217
+Mean absolute error                      0.331 
+Root mean squared error                  0.4068
+Relative absolute error                 91.7592 %
+Root relative squared error             95.7729 %
+Total Number of Instances          36525250
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.960    0.789    0.797      0.960    0.871      0.267    0.635     0.824     0
+                 0.211    0.040    0.620      0.211    0.315      0.267    0.635     0.395     1
+Weighted Avg.    0.783    0.612    0.756      0.783    0.740      0.267    0.635     0.723     
+
+[[26785044.  1114740.]
+ [ 6803917.  1821549.]]
+
+Class 0 details
+Area under ROC: 0.6350289333534017
+False negatives: 1114740.0
+True negatives: 1821549.0
+False positives: 6803917.0
+True positives: 26785044.0
+
+Class 1 details
+Area under ROC: 0.6350289333534017
+False negatives: 6803917.0
+True negatives: 26785044.0
+False positives: 1114740.0
+True positives: 1821549.0
+

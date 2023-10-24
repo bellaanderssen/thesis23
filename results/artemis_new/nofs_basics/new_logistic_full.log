@@ -1,0 +1,161 @@
+Classifier: weka.classifiers.functions.Logistic
+Options: default
+Classifier build time (HH:mm:ss): 1:25:10.283641
+Evaluation time (HH:mm:ss): 10:19:56.249614
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                         Class
+Variable                                     0
+==============================================
+age=46-65                               -0.077
+age=0-5                                 0.0465
+age=66-85                               0.4687
+age=16-25                              -0.4334
+age=26-45                              -0.3322
+age=6-15                               -0.0017
+age=86+                                 0.8138
+sex=F                                   -0.017
+sex=M                                   0.0173
+sex=other                               -0.798
+source_referral=other                    0.136
+source_referral=self/family/friends    -0.1396
+source_referral=clinic                 -0.5253
+source_referral=community_org           0.0635
+source_referral=hospital                0.6834
+departure_referral=specialist           0.1001
+departure_referral=no_referral         -0.0744
+departure_referral=unknown              -0.224
+departure_referral=ED_review            0.0223
+preferred_language=other                0.7029
+preferred_language=english             -0.7119
+preferred_language=european            -0.5372
+preferred_language=asian               -0.0442
+preferred_language=none                 0.3136
+preferred_language=middle eastern      -0.6387
+arrival_mode=private_vehicle            0.0828
+arrival_mode=ambulance                 -0.0625
+arrival_mode=other                     -0.1052
+separation_mode=admitted                0.0258
+separation_mode=released               -0.9561
+separation_mode=left_against_advice    -0.5134
+separation_mode=died/other              0.1176
+triage_category=1                       0.4325
+triage_category=2                       0.2088
+triage_category=3                       0.0464
+triage_category=4                      -0.1853
+triage_category=5                      -0.9811
+icu_status=True                         0.1818
+level=0                                -0.0111
+level=1                                -0.0559
+level=2                                 0.1667
+level=3                                 0.0562
+level=4                                 0.0563
+level=5                                  0.023
+level=6                                -0.1096
+EDLOS=25+                              -0.0307
+EDLOS=13-24                            -0.0888
+EDLOS=5-12                              0.2319
+EDLOS=0-4                               0.0308
+remoteness=1                            0.0595
+remoteness=2                           -0.0693
+remoteness=3                           -0.0372
+remoteness=4                             -0.13
+remoteness=5                           -0.3265
+Intercept                               0.4431
+
+
+Odds Ratios...
+                                         Class
+Variable                                     0
+==============================================
+age=46-65                               0.9259
+age=0-5                                 1.0476
+age=66-85                               1.5979
+age=16-25                               0.6483
+age=26-45                               0.7174
+age=6-15                                0.9983
+age=86+                                 2.2566
+sex=F                                   0.9831
+sex=M                                   1.0174
+sex=other                               0.4502
+source_referral=other                   1.1457
+source_referral=self/family/friends     0.8697
+source_referral=clinic                  0.5914
+source_referral=community_org           1.0655
+source_referral=hospital                1.9806
+departure_referral=specialist           1.1053
+departure_referral=no_referral          0.9283
+departure_referral=unknown              0.7993
+departure_referral=ED_review            1.0226
+preferred_language=other                2.0196
+preferred_language=english              0.4907
+preferred_language=european             0.5844
+preferred_language=asian                0.9568
+preferred_language=none                 1.3683
+preferred_language=middle eastern        0.528
+arrival_mode=private_vehicle            1.0863
+arrival_mode=ambulance                  0.9395
+arrival_mode=other                      0.9002
+separation_mode=admitted                1.0261
+separation_mode=released                0.3844
+separation_mode=left_against_advice     0.5984
+separation_mode=died/other              1.1248
+triage_category=1                       1.5411
+triage_category=2                       1.2322
+triage_category=3                       1.0475
+triage_category=4                       0.8308
+triage_category=5                       0.3749
+icu_status=True                         1.1994
+level=0                                  0.989
+level=1                                 0.9456
+level=2                                 1.1814
+level=3                                 1.0578
+level=4                                  1.058
+level=5                                 1.0232
+level=6                                 0.8962
+EDLOS=25+                               0.9698
+EDLOS=13-24                             0.9151
+EDLOS=5-12                               1.261
+EDLOS=0-4                               1.0313
+remoteness=1                            1.0613
+remoteness=2                             0.933
+remoteness=3                            0.9635
+remoteness=4                            0.8781
+remoteness=5                            0.7215
+
+
+
+Correctly Classified Instances     28666681          78.4846 %
+Incorrectly Classified Instances   7858569               21.5154 %
+Kappa statistic                          0.2284
+Mean absolute error                      0.3203
+Root mean squared error                  0.4003
+Relative absolute error                 88.7925 %
+Root relative squared error             94.24   %
+Total Number of Instances          36525250
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.961    0.784    0.798      0.961    0.872      0.275    0.694     0.861     0
+                 0.216    0.039    0.630      0.216    0.321      0.275    0.694     0.452     1
+Weighted Avg.    0.785    0.608    0.759      0.785    0.742      0.275    0.694     0.765     
+
+[[26805889.  1093895.]
+ [ 6764674.  1860792.]]
+
+Class 0 details
+Area under ROC: 0.6935001085349334
+False negatives: 1093895.0
+True negatives: 1860792.0
+False positives: 6764674.0
+True positives: 26805889.0
+
+Class 1 details
+Area under ROC: 0.6935001085349334
+False negatives: 6764674.0
+True negatives: 26805889.0
+False positives: 1093895.0
+True positives: 1860792.0
+

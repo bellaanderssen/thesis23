@@ -1,0 +1,76 @@
+Classifier: weka.classifiers.functions.MultilayerPerceptron
+Options: -H 1 -N 10
+Classifier build time (HH:mm:ss): 0:07:01.120230
+Evaluation time (HH:mm:ss): 1:18:27.927239
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    0.5991626633576757
+    Node 2    0.9414048996542762
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -0.5991626633576754
+    Node 2    -0.9414048996542764
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.18560395624246306
+    Attrib age=46-65    -2.7680712308540807
+    Attrib age=0-5    0.53392697027097
+    Attrib age=66-85    4.549156410364175
+    Attrib age=16-25    -7.717359426978195
+    Attrib age=26-45    -3.23332263879232
+    Attrib age=6-15    0.333213075971028
+    Attrib age=86+    9.00442015098372
+    Attrib icu_status=True    2.4836435070929896
+    Attrib triage_category=1    5.871229378313323
+    Attrib triage_category=2    3.433861501623605
+    Attrib triage_category=3    2.7544665942783615
+    Attrib triage_category=4    -0.8196028756792714
+    Attrib triage_category=5    -10.681169867588395
+    Attrib remoteness=1    0.0027056103329784753
+    Attrib remoteness=2    2.5558268373526287
+    Attrib remoteness=3    1.8247358013391441
+    Attrib remoteness=4    -1.9422911327178407
+    Attrib remoteness=5    -1.7359420357993864
+Class 0
+    Input
+    Node 0
+Class 1
+    Input
+    Node 1
+
+
+
+Correctly Classified Instances     27899784          76.3849 %
+Incorrectly Classified Instances   8625466               23.6151 %
+Kappa statistic                          0     
+Mean absolute error                      0.3435
+Root mean squared error                  0.4184
+Relative absolute error                 95.2016 %
+Root relative squared error             98.5078 %
+Total Number of Instances          36525250
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.764      1.000    0.866      ?        0.613     0.831     0
+                 0.000    0.000    ?          0.000    ?          ?        0.613     0.299     1
+Weighted Avg.    0.764    0.764    ?          0.764    ?          ?        0.613     0.705     
+
+[[27899784.        0.]
+ [ 8625466.        0.]]
+
+Class 0 details
+Area under ROC: 0.612683789489643
+False negatives: 0.0
+True negatives: 0.0
+False positives: 8625466.0
+True positives: 27899784.0
+
+Class 1 details
+Area under ROC: 0.6126837863492387
+False negatives: 8625466.0
+True negatives: 27899784.0
+False positives: 0.0
+True positives: 0.0
+

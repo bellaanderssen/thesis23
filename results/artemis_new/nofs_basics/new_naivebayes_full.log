@@ -1,0 +1,142 @@
+Classifier: weka.classifiers.bayes.NaiveBayes
+Options: default
+Classifier build time (HH:mm:ss): 0:00:12.874397
+Evaluation time (HH:mm:ss): 0:10:36.031708
+
+Naive Bayes Classifier
+
+                              Class
+Attribute                         0           1
+                             (0.76)      (0.24)
+================================================
+age
+  46-65                    7049548.0   2535021.0
+  0-5                      1629420.0    363622.0
+  66-85                    7074598.0   1111498.0
+  16-25                    3019588.0   1411981.0
+  26-45                    6466328.0   2760715.0
+  6-15                      958947.0    252878.0
+  86+                      1701362.0    189758.0
+  [total]                2.7899791E7   8625473.0
+
+sex
+  F                      1.4373366E7   4548852.0
+  M                      1.3524549E7   4074698.0
+  other                       1872.0      1919.0
+  [total]                2.7899787E7   8625469.0
+
+source_referral
+  other                  2.7345963E7   7612634.0
+  self/family/friends       513333.0    941353.0
+  clinic                      6829.0     21262.0
+  community_org              27656.0     46162.0
+  hospital                    6008.0      4060.0
+  [total]                2.7899789E7   8625471.0
+
+departure_referral
+  specialist             2.7055973E7   8109205.0
+  no_referral               526774.0    313640.0
+  unknown                   186048.0    146172.0
+  ED_review                 130993.0     56453.0
+  [total]                2.7899788E7   8625470.0
+
+preferred_language
+  other                   2.676308E7   6784493.0
+  english                  1032298.0   1695977.0
+  european                   77660.0    119646.0
+  asian                      13033.0     12782.0
+  none                         454.0       175.0
+  middle eastern             13265.0     12399.0
+  [total]                 2.789979E7   8625472.0
+
+arrival_mode
+  private_vehicle        1.3536948E7   3926793.0
+  ambulance              1.3101781E7   4108255.0
+  other                    1261058.0    590421.0
+  [total]                2.7899787E7   8625469.0
+
+separation_mode
+  admitted               1.5169037E7   4885919.0
+  released                  482286.0    640377.0
+  left_against_advice       203437.0    243308.0
+  died/other             1.2045028E7   2855866.0
+  [total]                2.7899788E7   8625470.0
+
+triage_category
+  1                         495118.0    103132.0
+  2                        7409318.0   1864971.0
+  3                      1.3547684E7   4005131.0
+  4                        5924074.0   2176867.0
+  5                         523595.0    475370.0
+  [total]                2.7899789E7   8625471.0
+
+icu_status
+  False                   2.712183E7   8449541.0
+  True                      777956.0    175927.0
+  [total]                2.7899786E7   8625468.0
+
+level
+  0                         387874.0    146732.0
+  1                         129177.0     68832.0
+  2                        1126270.0    354423.0
+  3                        4501535.0   1225861.0
+  4                        4259326.0   1125067.0
+  5                        8009836.0   2277768.0
+  6                        9485773.0   3426790.0
+  [total]                2.7899791E7   8625473.0
+
+EDLOS
+  25+                    2.7600571E7   8457020.0
+  13-24                     178958.0     98289.0
+  5-12                      101026.0     58518.0
+  0-4                        19233.0     11643.0
+  [total]                2.7899788E7   8625470.0
+
+remoteness
+  1                      1.9681084E7   6141001.0
+  2                        1629251.0    505462.0
+  3                        6341440.0   1859979.0
+  4                         145091.0     73760.0
+  5                         102923.0     45269.0
+  [total]                2.7899789E7   8625471.0
+
+death_status
+  False                  2.7899785E7   8625467.0
+  [total]                2.7899785E7   8625467.0
+
+
+
+
+Correctly Classified Instances     28654050          78.45   %
+Incorrectly Classified Instances   7871200               21.55   %
+Kappa statistic                          0.2603
+Mean absolute error                      0.3011
+Root mean squared error                  0.4078
+Relative absolute error                 83.4577 %
+Root relative squared error             96.0126 %
+Total Number of Instances          36525250
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.945    0.735    0.806      0.945    0.870      0.292    0.686     0.857     0
+                 0.265    0.055    0.599      0.265    0.368      0.292    0.686     0.445     1
+Weighted Avg.    0.784    0.574    0.757      0.784    0.751      0.292    0.686     0.760     
+
+[[26366506.  1533278.]
+ [ 6337922.  2287544.]]
+
+Class 0 details
+Area under ROC: 0.6860752336355815
+False negatives: 1533278.0
+True negatives: 2287544.0
+False positives: 6337922.0
+True positives: 26366506.0
+
+Class 1 details
+Area under ROC: 0.6860752336355815
+False negatives: 6337922.0
+True negatives: 26366506.0
+False positives: 1533278.0
+True positives: 2287544.0
+

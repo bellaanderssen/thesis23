@@ -5,8 +5,8 @@
 #PBS -m abe
 #PBS -N evaluate_cfs_knn5
 #PBS -q defaultQ
-#PBS -l select=1:ncpus=1:mem=2048GB
-#PBS -l walltime=48:00:00
+#PBS -l select=1:ncpus=1:mem=512GB
+#PBS -l walltime=24:00:00
 
 module load python/3.7.2
 module load java
@@ -18,4 +18,4 @@ pip install --user python-weka-wrapper3
 cd $PBS_O_WORKDIR
 
 # python feature_selection script
-python evaluate.py results/cfs_knn5
+python evaluate.py results/artemis_new/cfs_knn5

@@ -3,7 +3,7 @@
 #PBS -P RDS-FEI-START2-RW
 #PBS -M iand8846@uni.sydney.edu.au
 #PBS -m abe
-#PBS -N CLASSIFY_INFOGAIN_2
+#PBS -N CLASSIFY_MANUAL_2
 #PBS -q defaultQ
 #PBS -l select=1:ncpus=4:mem=16GB
 #PBS -l walltime=03:00:00
@@ -18,4 +18,4 @@ pip install --user python-weka-wrapper3
 cd $PBS_O_WORKDIR
 
 # python feature_selection script
-python evaluate.py results/infogain
+python evaluate.py results/artemis_new/manual
