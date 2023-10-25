@@ -1,0 +1,113 @@
+Classifier: weka.classifiers.functions.MultilayerPerceptron
+Options: -H 1 -N 50
+Classifier build time (HH:mm:ss): 0:45:59.563173
+Evaluation time (HH:mm:ss): 7:07:45.367659
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -0.7582838219039169
+    Node 2    1.9955136563686424
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    0.7582838219039164
+    Node 2    -1.9955136563686422
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -7.212585755640606
+    Attrib age=46-65    -34.2005284615249
+    Attrib age=0-5    30.32521915871081
+    Attrib age=66-85    55.604800274557974
+    Attrib age=16-25    -48.73267027605019
+    Attrib age=26-45    -44.91442679802992
+    Attrib age=6-15    -12.07956335495483
+    Attrib age=86+    89.83404179149288
+    Attrib sex=F    -5.332550045067423
+    Attrib sex=M    7.8675368462523805
+    Attrib sex=other    4.7051592799795925
+    Attrib source_referral=other    31.706468674519662
+    Attrib source_referral=self/family/friends    -43.89263265250261
+    Attrib source_referral=clinic    -46.70027397265246
+    Attrib source_referral=community_org    25.806761397906396
+    Attrib source_referral=hospital    54.765161372653225
+    Attrib departure_referral=specialist    37.33780287641804
+    Attrib departure_referral=no_referral    -26.721210105796843
+    Attrib departure_referral=unknown    -28.19434628487666
+    Attrib departure_referral=ED_review    32.10002093735361
+    Attrib preferred_language=other    97.73217042291446
+    Attrib preferred_language=english    -17.747029910105294
+    Attrib preferred_language=european    -30.71055804946393
+    Attrib preferred_language=asian    -2.1052918334744564
+    Attrib preferred_language=none    4.86631277400905
+    Attrib preferred_language=middle eastern    -23.26005106173493
+    Attrib arrival_mode=private_vehicle    6.541339837237603
+    Attrib arrival_mode=ambulance    -0.31971846019066463
+    Attrib arrival_mode=other    1.0733539523726858
+    Attrib separation_mode=admitted    52.73090799187359
+    Attrib separation_mode=released    -60.461480618198934
+    Attrib separation_mode=left_against_advice    -31.060655362422906
+    Attrib separation_mode=died/other    53.21317564571102
+    Attrib triage_category=1    68.80142087563297
+    Attrib triage_category=2    41.70320734749147
+    Attrib triage_category=3    38.888846257993926
+    Attrib triage_category=4    0.5920812193198373
+    Attrib triage_category=5    -128.35333181922687
+    Attrib icu_status=True    -3.3283766767239467
+    Attrib level=0    -5.775419728859603
+    Attrib level=1    -0.42686494403496256
+    Attrib level=2    12.797376579866212
+    Attrib level=3    15.002196578979285
+    Attrib level=4    6.728658885966516
+    Attrib level=5    8.338597048044376
+    Attrib level=6    -0.6713582287799431
+    Attrib EDLOS=25+    -23.981098936084596
+    Attrib EDLOS=13-24    -26.42850955026819
+    Attrib EDLOS=5-12    54.1652995786888
+    Attrib EDLOS=0-4    10.582128105350801
+    Attrib remoteness=1    2.6419147973119164
+    Attrib remoteness=2    28.937288035368155
+    Attrib remoteness=3    23.098458019499834
+    Attrib remoteness=4    -4.425553494168143
+    Attrib remoteness=5    -28.581806339359293
+    Attrib death_status    0.022843435749697882
+Class 0
+    Input
+    Node 0
+Class 1
+    Input
+    Node 1
+
+
+
+Correctly Classified Instances     28679858          78.5206 %
+Incorrectly Classified Instances   7845392               21.4794 %
+Kappa statistic                          0.2758
+Mean absolute error                      0.3217
+Root mean squared error                  0.4056
+Relative absolute error                 89.1844 %
+Root relative squared error             95.4888 %
+Total Number of Instances          36525250
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.939    0.712    0.810      0.939    0.870      0.302    0.614     0.809     0
+                 0.288    0.061    0.593      0.288    0.387      0.302    0.614     0.378     1
+Weighted Avg.    0.785    0.559    0.759      0.785    0.756      0.302    0.614     0.707     
+
+[[26198456.  1701328.]
+ [ 6144064.  2481402.]]
+
+Class 0 details
+Area under ROC: 0.614199337680158
+False negatives: 1701328.0
+True negatives: 2481402.0
+False positives: 6144064.0
+True positives: 26198456.0
+
+Class 1 details
+Area under ROC: 0.6142015084458861
+False negatives: 6144064.0
+True negatives: 26198456.0
+False positives: 1701328.0
+True positives: 2481402.0
+

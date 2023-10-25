@@ -1,0 +1,64 @@
+Classifier: weka.classifiers.bayes.BayesNet
+Options: default
+Classifier build time (HH:mm:ss): 0:09:16.215881
+Evaluation time (HH:mm:ss): 6:05:08.391064
+
+Bayes Network Classifier
+Using ADTree
+#attributes=14 #classindex=13
+Network structure (nodes followed by parents)
+age(7): repres7days 
+sex(3): repres7days 
+source_referral(5): repres7days 
+departure_referral(4): repres7days 
+preferred_language(6): repres7days 
+arrival_mode(3): repres7days 
+separation_mode(4): repres7days 
+triage_category(5): repres7days 
+icu_status(2): repres7days 
+level(7): repres7days 
+EDLOS(4): repres7days 
+remoteness(5): repres7days 
+death_status(1): repres7days 
+repres7days(2): 
+LogScore Bayes: -3.284677856176561E8
+LogScore BDeu: -3.2846796029655755E8
+LogScore MDL: -3.284680230866534E8
+LogScore ENTROPY: -3.284672655987788E8
+LogScore AIC: -3.284673525987788E8
+
+
+
+Correctly Classified Instances     28654050          78.45   %
+Incorrectly Classified Instances   7871200               21.55   %
+Kappa statistic                          0.2603
+Mean absolute error                      0.3011
+Root mean squared error                  0.4078
+Relative absolute error                 83.4577 %
+Root relative squared error             96.0126 %
+Total Number of Instances          36525250
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.945    0.735    0.806      0.945    0.870      0.292    0.686     0.857     0
+                 0.265    0.055    0.599      0.265    0.368      0.292    0.686     0.445     1
+Weighted Avg.    0.784    0.574    0.757      0.784    0.751      0.292    0.686     0.760     
+
+[[26366506.  1533278.]
+ [ 6337922.  2287544.]]
+
+Class 0 details
+Area under ROC: 0.6860752153073998
+False negatives: 1533278.0
+True negatives: 2287544.0
+False positives: 6337922.0
+True positives: 26366506.0
+
+Class 1 details
+Area under ROC: 0.6860752153073998
+False negatives: 6337922.0
+True negatives: 26366506.0
+False positives: 1533278.0
+True positives: 2287544.0
+

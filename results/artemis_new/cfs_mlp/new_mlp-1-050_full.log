@@ -1,0 +1,69 @@
+Classifier: weka.classifiers.functions.MultilayerPerceptron
+Options: -H 1 -N 50
+Classifier build time (HH:mm:ss): 0:20:05.182677
+Evaluation time (HH:mm:ss): 3:11:51.824158
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -0.7430087867451711
+    Node 2    1.9466854915745226
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    0.7430087867451718
+    Node 2    -1.9466854915745233
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -1.2667488424343654
+    Attrib preferred_language=other    8.038252260300188
+    Attrib preferred_language=english    -4.8309221636381805
+    Attrib preferred_language=european    -3.3731277816166623
+    Attrib preferred_language=asian    2.891333553674997
+    Attrib preferred_language=none    0.4698569220167063
+    Attrib preferred_language=middle eastern    1.6876986300739547
+    Attrib triage_category=1    8.780575937345203
+    Attrib triage_category=2    1.7141133327132811
+    Attrib triage_category=3    -1.0688711930820216
+    Attrib triage_category=4    -1.7867392075277733
+    Attrib triage_category=5    -3.8714248375212597
+Class 0
+    Input
+    Node 0
+Class 1
+    Input
+    Node 1
+
+
+
+Correctly Classified Instances     28585862          78.2633 %
+Incorrectly Classified Instances   7939388               21.7367 %
+Kappa statistic                          0.2277
+Mean absolute error                      0.3242
+Root mean squared error                  0.4081
+Relative absolute error                 89.8733 %
+Root relative squared error             96.0865 %
+Total Number of Instances          36525250
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.956    0.778    0.799      0.956    0.870      0.269    0.613     0.811     0
+                 0.222    0.044    0.609      0.222    0.325      0.269    0.613     0.384     1
+Weighted Avg.    0.783    0.605    0.754      0.783    0.742      0.269    0.613     0.710     
+
+[[26675074.  1224710.]
+ [ 6714678.  1910788.]]
+
+Class 0 details
+Area under ROC: 0.6132150596878123
+False negatives: 1224710.0
+True negatives: 1910788.0
+False positives: 6714678.0
+True positives: 26675074.0
+
+Class 1 details
+Area under ROC: 0.6132150596878123
+False negatives: 6714678.0
+True negatives: 26675074.0
+False positives: 1224710.0
+True positives: 1910788.0
+
